@@ -1,0 +1,371 @@
+<http://ns.softwiki.de/req/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#imports> <http://rdfs.org/sioc/ns#> .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#imports> <http://rdfs.org/sioc/types#> .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#imports> <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core.rdf> .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Jens Lehmann" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Kim Lauenroth" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Philipp Heim" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Sebastian Tramp" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Steffen Lohmann" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/contributor> "Thomas Riechert" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/title> "SoftWiki Ontology for Requirements Engineering (SWORE)" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-03-12" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-03-13" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-10-24" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-01-22" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-02-29" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-07-08" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-01-15" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-03-04" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-07-09" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2010-01-09" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2010-06-22" .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2000/01/rdf-schema#comment> "A requirements engineering ontology for the SoftWiki methodology." .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2000/01/rdf-schema#label> "SoftWiki Ontology for Requirements Engineering (SWORE)" .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#versionInfo> "version 1.05 - for requirements management we added an general class ApplicationDecision \nversion 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \nversion 1.03 - alignement to tag und dc improved; \nversion 1.01 - Alignment to SIOC, FOAF and SKOS added\nversion 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\nversion 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\nversion 0.7 - Sebastian Dietzold - labels completed and namespace correction\nversion 0.6 - name space changed to ns.softwiki.de/req\nversion 0.5 - refined by Thomas according to ESWC Poster submission \nversion 0.4 - refined by Jens on the way home from Essen\nversion 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\nversion 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\nversion 0.1 - simple initial version by Thomas and Jens before meeting in Essen" .
+<http://ns.softwiki.de/req/> <http://xmlns.com/foaf/0.1/depiction> "http://softwiki.de/netzwerk/wp-content/uploads/2010/01/swore-version-1-04.png" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/conflicts
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/undirectedrelation> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/conflicts> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#label> "conficts"@en .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#label> "steht im Konflikt zu"@de .
+# 
+# http://ns.softwiki.de/req/dependsOn
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/entails> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#label> "depends on"@en .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#label> "hängt ab von"@de .
+# 
+# http://ns.softwiki.de/req/details
+<http://ns.softwiki.de/req/details> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isDetailedBy> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#label> "detailiert"@de .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#label> "details"@en .
+# 
+# http://ns.softwiki.de/req/entails
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#label> "entails"@en .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#label> "hat zur Folge"@de .
+# 
+# http://ns.softwiki.de/req/invalidates
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isInvalidFor> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#label> "entkräftet"@de .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#label> "invalidates"@en .
+# 
+# http://ns.softwiki.de/req/isCommentedBy
+<http://ns.softwiki.de/req/isCommentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isCommentedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isCommentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://rdfs.org/sioc/ns#Item> .
+<http://ns.softwiki.de/req/isCommentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is commented by"@en .
+<http://ns.softwiki.de/req/isCommentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wird kommentiert durch"@de .
+# 
+# http://ns.softwiki.de/req/isCreatedBy
+<http://ns.softwiki.de/req/isCreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isCreatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/isDerivedFrom> .
+# 
+# http://ns.softwiki.de/req/isDefinedBy
+<http://ns.softwiki.de/req/isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/isDerivedFrom> .
+# 
+# http://ns.softwiki.de/req/isDerivedFrom
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isLeadingTo> .
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is derived from"@en .
+<http://ns.softwiki.de/req/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "ist abgeleitet von"@de .
+# 
+# http://ns.softwiki.de/req/isDetailedBy
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is detailed by"@en .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wird detailiert durch"@de .
+# 
+# http://ns.softwiki.de/req/isInvalidFor
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#label> "is invalid for"@en .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#label> "ist ungültig für"@de .
+# 
+# http://ns.softwiki.de/req/isLastModifiedBy
+<http://ns.softwiki.de/req/isLastModifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isLastModifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/isDerivedFrom> .
+# 
+# http://ns.softwiki.de/req/isLeadingTo
+<http://ns.softwiki.de/req/isLeadingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isLeadingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/isLeadingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isLeadingTo> <http://www.w3.org/2000/01/rdf-schema#label> "führt zu"@de .
+<http://ns.softwiki.de/req/isLeadingTo> <http://www.w3.org/2000/01/rdf-schema#label> "is leading to"@en .
+# 
+# http://ns.softwiki.de/req/isRedundant
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/undirectedrelation> .
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isRedundant> .
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/2000/01/rdf-schema#label> "is redundant"@en .
+<http://ns.softwiki.de/req/isRedundant> <http://www.w3.org/2000/01/rdf-schema#label> "ist redundant zu"@de .
+# 
+# http://ns.softwiki.de/req/isRelated
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/undirectedrelation> .
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isRelated> .
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/2000/01/rdf-schema#label> "bezieht sich auf"@de .
+<http://ns.softwiki.de/req/isRelated> <http://www.w3.org/2000/01/rdf-schema#label> "is related to"@en .
+# 
+# http://ns.softwiki.de/req/isSimilarTo
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/undirectedrelation> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isSimilarTo> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "is similar to"@en .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "ist ähnlich wie"@de .
+# 
+# http://ns.softwiki.de/req/refersTo
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/relevantRequirements> .
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relevanter Aspekt eines geplantes Systems (ähnlich zu Tagging)."@de .
+<http://ns.softwiki.de/req/refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refers to" .
+# 
+# http://ns.softwiki.de/req/relevantRequirements
+<http://ns.softwiki.de/req/relevantRequirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/relevantRequirements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/relevantRequirements> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/relevantRequirements> <http://www.w3.org/2000/01/rdf-schema#label> "relevant requirements" .
+# 
+# http://ns.softwiki.de/req/undirectedrelation
+<http://ns.softwiki.de/req/undirectedrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/undirectedrelation> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/undirectedrelation> .
+<http://ns.softwiki.de/req/undirectedrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ns.softwiki.de/req/undirectedrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://ns.softwiki.de/req/undirectedrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+# 
+# http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag
+<http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/refersTo> .
+# 
+# http://www.w3.org/2004/02/skos/core#subject
+<http://www.w3.org/2004/02/skos/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/refersTo> .
+# 
+# sioc:about
+<sioc:about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<sioc:about> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isCommentedBy> .
+<sioc:about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<sioc:about> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdfs.org/sioc/ns#Item> .
+<sioc:about> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/averagePriorityRate
+<http://ns.softwiki.de/req/averagePriorityRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/averagePriorityRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/averageRate> .
+# 
+# http://ns.softwiki.de/req/averageQualityRate
+<http://ns.softwiki.de/req/averageQualityRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/averageQualityRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/averageRate> .
+# 
+# http://ns.softwiki.de/req/averageRate
+<http://ns.softwiki.de/req/averageRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/averageRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/averageRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://ns.softwiki.de/req/averageRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Is calculated by given rates." .
+# 
+# http://ns.softwiki.de/req/changeDate
+<http://ns.softwiki.de/req/changeDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/changeDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/changeDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://ns.softwiki.de/req/creationDate
+<http://ns.softwiki.de/req/creationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/creationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/creationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://ns.softwiki.de/req/modified
+<http://ns.softwiki.de/req/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/modified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://ns.softwiki.de/req/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "Any modification of an Requirement will be stored using this Property." .
+# 
+# http://ns.softwiki.de/req/state
+<http://ns.softwiki.de/req/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "Beschreibung"@de .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/ApplicationDecision
+<http://ns.softwiki.de/req/ApplicationDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ApplicationDecision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/ApplicationDecision> <http://www.w3.org/2000/01/rdf-schema#comment> "used for management of requirements specifying decisions for future design or architecture of the application" .
+<http://ns.softwiki.de/req/ApplicationDecision> <http://www.w3.org/2000/01/rdf-schema#label> "application decision" .
+# 
+# http://ns.softwiki.de/req/ApplicationPointer
+<http://ns.softwiki.de/req/ApplicationPointer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ApplicationPointer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/ApplicationPointer> <http://www.w3.org/2000/01/rdf-schema#comment> "points to code or URLs of the future application" .
+<http://ns.softwiki.de/req/ApplicationPointer> <http://www.w3.org/2000/01/rdf-schema#label> "application pointer" .
+# 
+# http://ns.softwiki.de/req/ApplicationState
+<http://ns.softwiki.de/req/ApplicationState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ApplicationState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/ApplicationState> <http://www.w3.org/2000/01/rdf-schema#comment> "gives Information about the state of the current development" .
+<http://ns.softwiki.de/req/ApplicationState> <http://www.w3.org/2000/01/rdf-schema#label> "application state" .
+# 
+# http://ns.softwiki.de/req/Document
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/Source> .
+# 
+# http://ns.softwiki.de/req/PriorityRating
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule: Every Author only defines at most one rating about the priority for each requirement." .
+# 
+# http://ns.softwiki.de/req/QualityRating
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule: Every Author only defines at most one rating about the quality for each requirement." .
+# 
+# http://ns.softwiki.de/req/ReferencePoint
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Vote> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2000/01/rdf-schema#label> "reference point" .
+# 
+# http://ns.softwiki.de/req/Requirement
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Vote> .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Anforderung(en)"@de .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "requirement" .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2002/07/owl#versionInfo> "todo: more detailed description of requirements using alignment to specialized vocabularies" .
+# 
+# http://ns.softwiki.de/req/Source
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2002/07/owl#disjointWith> <http://ns.softwiki.de/req/Vote> .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2000/01/rdf-schema#comment> "source of which an requirement has been derived" .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2000/01/rdf-schema#label> "source" .
+# 
+# http://ns.softwiki.de/req/Stakeholder
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "stakeholder" .
+# 
+# http://ns.softwiki.de/req/Vote
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule: Every Author only votes at most one requirement." .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#label> "vote" .
+# 
+# http://rdfs.org/sioc/ns#Item
+<http://rdfs.org/sioc/ns#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/sioc/types#Poll
+<http://rdfs.org/sioc/types#Poll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Items in Topic Tree" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule: Every Requirement refers to exact one Concept." .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Thema"@de .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Titel"@de .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+<http://www.w3.org/2004/02/skos/core#primarySubject> <http://www.w3.org/2000/01/rdf-schema#label> "Thema"@de .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

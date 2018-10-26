@@ -1,0 +1,611 @@
+[ {
+  "@id" : "http://ns.softwiki.de/req/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Jens Lehmann"
+  }, {
+    "@value" : "Kim Lauenroth"
+  }, {
+    "@value" : "Philipp Heim"
+  }, {
+    "@value" : "Sebastian Tramp"
+  }, {
+    "@value" : "Steffen Lohmann"
+  }, {
+    "@value" : "Thomas Riechert"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "SoftWiki Ontology for Requirements Engineering (SWORE)"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2007-03-12"
+  }, {
+    "@value" : "2007-03-13"
+  }, {
+    "@value" : "2007-10-24"
+  }, {
+    "@value" : "2008-01-22"
+  }, {
+    "@value" : "2008-02-29"
+  }, {
+    "@value" : "2008-07-08"
+  }, {
+    "@value" : "2009-01-15"
+  }, {
+    "@value" : "2009-03-04"
+  }, {
+    "@value" : "2009-07-09"
+  }, {
+    "@value" : "2010-01-09"
+  }, {
+    "@value" : "2010-06-22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A requirements engineering ontology for the SoftWiki methodology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SoftWiki Ontology for Requirements Engineering (SWORE)"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#"
+  }, {
+    "@id" : "http://rdfs.org/sioc/types#"
+  }, {
+    "@id" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core.rdf"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "version 1.05 - for requirements management we added an general class ApplicationDecision \nversion 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \nversion 1.03 - alignement to tag und dc improved; \nversion 1.01 - Alignment to SIOC, FOAF and SKOS added\nversion 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\nversion 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\nversion 0.7 - Sebastian Dietzold - labels completed and namespace correction\nversion 0.6 - name space changed to ns.softwiki.de/req\nversion 0.5 - refined by Thomas according to ESWC Poster submission \nversion 0.4 - refined by Jens on the way home from Essen\nversion 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\nversion 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\nversion 0.1 - simple initial version by Thomas and Jens before meeting in Essen"
+  } ],
+  "http://xmlns.com/foaf/0.1/depiction" : [ {
+    "@value" : "http://softwiki.de/netzwerk/wp-content/uploads/2010/01/swore-version-1-04.png"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/ApplicationDecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "used for management of requirements specifying decisions for future design or architecture of the application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "application decision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/ApplicationPointer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "points to code or URLs of the future application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "application pointer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/ApplicationState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "gives Information about the state of the current development"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "application state"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/PriorityRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule: Every Author only defines at most one rating about the priority for each requirement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/types#Poll"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/QualityRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule: Every Author only defines at most one rating about the quality for each requirement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/types#Poll"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/ReferencePoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reference point"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  }, {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  }, {
+    "@id" : "http://ns.softwiki.de/req/Vote"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/Requirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Anforderung(en)"
+  }, {
+    "@value" : "requirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  }, {
+    "@id" : "http://ns.softwiki.de/req/Vote"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "todo: more detailed description of requirements using alignment to specialized vocabularies"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "source of which an requirement has been derived"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://ns.softwiki.de/req/Vote"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/Stakeholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "stakeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/Vote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule: Every Author only votes at most one requirement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "vote"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/types#Poll"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/averagePriorityRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/averageRate"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/averageQualityRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/averageRate"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/averageRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is calculated by given rates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/changeDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/conflicts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "conficts"
+  }, {
+    "@language" : "de",
+    "@value" : "steht im Konflikt zu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/undirectedrelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/conflicts"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/creationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/dependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "depends on"
+  }, {
+    "@language" : "de",
+    "@value" : "hängt ab von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/entails"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/details",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "detailiert"
+  }, {
+    "@language" : "en",
+    "@value" : "details"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isDetailedBy"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/entails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "entails"
+  }, {
+    "@language" : "de",
+    "@value" : "hat zur Folge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/invalidates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "entkräftet"
+  }, {
+    "@language" : "en",
+    "@value" : "invalidates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isInvalidFor"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isCommentedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is commented by"
+  }, {
+    "@language" : "de",
+    "@value" : "wird kommentiert durch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Item"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isCreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isDerivedFrom"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isDerivedFrom"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is derived from"
+  }, {
+    "@language" : "de",
+    "@value" : "ist abgeleitet von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isLeadingTo"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isDetailedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is detailed by"
+  }, {
+    "@language" : "de",
+    "@value" : "wird detailiert durch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isInvalidFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is invalid for"
+  }, {
+    "@language" : "de",
+    "@value" : "ist ungültig für"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isLastModifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isDerivedFrom"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isLeadingTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "führt zu"
+  }, {
+    "@language" : "en",
+    "@value" : "is leading to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isRedundant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is redundant"
+  }, {
+    "@language" : "de",
+    "@value" : "ist redundant zu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/undirectedrelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isRedundant"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isRelated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "bezieht sich auf"
+  }, {
+    "@language" : "en",
+    "@value" : "is related to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/undirectedrelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isRelated"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/isSimilarTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is similar to"
+  }, {
+    "@language" : "de",
+    "@value" : "ist ähnlich wie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/undirectedrelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isSimilarTo"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any modification of an Requirement will be stored using this Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/refersTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Relevanter Aspekt eines geplantes Systems (ähnlich zu Tagging)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "refers to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/relevantRequirements"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/relevantRequirements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "relevant requirements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ]
+}, {
+  "@id" : "http://ns.softwiki.de/req/undirectedrelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/undirectedrelation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibung"
+  }, {
+    "@value" : "description"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Titel"
+  }, {
+    "@value" : "title"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/types#Poll",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/refersTo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Items in Topic Tree"
+  }, {
+    "@value" : "Rule: Every Requirement refers to exact one Concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Thema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/ReferencePoint"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#primarySubject",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Thema"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/refersTo"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "sioc:about",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ns.softwiki.de/req/Requirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://ns.softwiki.de/req/isCommentedBy"
+  } ]
+} ]

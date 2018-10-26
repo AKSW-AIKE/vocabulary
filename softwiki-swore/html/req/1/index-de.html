@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>SoftWiki Ontology for Requirements Engineering (SWORE)</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://ns.softwiki.de/req/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://ns.softwiki.de/req/","name":"SoftWiki Ontology for Requirements Engineering (SWORE)", "headline":"Document describing the ontology http://ns.softwiki.de/req/", "datePublished":"2010-06-22", "version":"version 1.05 - for requirements management we added an general class ApplicationDecision 
+version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them 
+version 1.03 - alignement to tag und dc improved; 
+version 1.01 - Alignment to SIOC, FOAF and SKOS added
+version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg
+version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)
+version 0.7 - Sebastian Dietzold - labels completed and namespace correction
+version 0.6 - name space changed to ns.softwiki.de/req
+version 0.5 - refined by Thomas according to ESWC Poster submission 
+version 0.4 - refined by Jens on the way home from Essen
+version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen
+version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen
+version 0.1 - simple initial version by Thomas and Jens before meeting in Essen", "contributor":[{"@type":"Person","name":"Jens Lehmann"},{"@type":"Person","name":"Kim Lauenroth"},{"@type":"Person","name":"Philipp Heim"},{"@type":"Person","name":"Sebastian Tramp"},{"@type":"Person","name":"Steffen Lohmann"},{"@type":"Person","name":"Thomas Riechert"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
+		}
+		t = t.replace(' back to ToC','');
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+    $(function(){
+      $("#abstract").load("sections/abstract-de.html"); 
+      $("#introduction").load("sections/introduction-de.html"); 
+      $("#overview").load("sections/overview-de.html"); 
+      $("#description").load("sections/description-de.html"); 
+      $("#references").load("sections/references-de.html"); 
+      $("#crossref").load("sections/crossref-de.html", null, loadHash); 
+    });
+    </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-de.html"><b>de</b></a> <a href="index-en.html"><b>en</b></a> </div>
+<h1>SoftWiki Ontology for Requirements Engineering (SWORE)</h1>
+<h2>Release  2010-06-22</h2>
+
+
+<dl>
+<dt>Revision:</dt>
+<dd>version 1.05 - for requirements management we added an general class ApplicationDecision 
+version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them 
+version 1.03 - alignement to tag und dc improved; 
+version 1.01 - Alignment to SIOC, FOAF and SKOS added
+version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg
+version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)
+version 0.7 - Sebastian Dietzold - labels completed and namespace correction
+version 0.6 - name space changed to ns.softwiki.de/req
+version 0.5 - refined by Thomas according to ESWC Poster submission 
+version 0.4 - refined by Jens on the way home from Essen
+version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen
+version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen
+version 0.1 - simple initial version by Thomas and Jens before meeting in Essen</dd>
+<dt>Contributors:</dt>
+<dd>Jens Lehmann</dd><dd>Kim Lauenroth</dd><dd>Philipp Heim</dd><dd>Sebastian Tramp</dd><dd>Steffen Lohmann</dd><dd>Thomas Riechert</dd>
+
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://rdfs.org/sioc/ns#">ns#</a></dd><dd><a href="http://rdfs.org/sioc/types#">types#</a></dd><dd><a href="http://www.holygoat.co.uk/owl/redwood/0.1/tags/">&lt;http://www.holygoat.co.uk/owl/redwood/0.1/tags/&gt;</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://xmlns.com/foaf/0.1/">&lt;http://xmlns.com/foaf/0.1/&gt;</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+</dl>
+
+<a href="provenance/provenance-de.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="introduction"></div>
+     <div id="overview"></div>
+     <div id="description"></div>
+     <div id="crossref"></div>
+     <div id="references"></div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+</div>
+</body>
+</html>
