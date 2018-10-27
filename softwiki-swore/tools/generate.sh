@@ -22,4 +22,13 @@ sleep 5
 
 #start post processing
 
+# Content Negoiation for rdf formats
+echo "<?php header('HTTP/1.1 303 See Other');"  	> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "\$accept = explode(',', \$_SERVER['HTTP_ACCEPT']);"	>> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "if (in_array('text/turtle ', \$accept))  header('Location: ontology.ttl');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "else if (in_array('application/n-triples', \$accept)) header('Location: ontology.nt');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "elseif (in_array('application/ld+json', \$accept)) header('Location: ontology.json');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "elseif (in_array('application/rdf+xml', \$accept)) header('Location: ontology.xml');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "else header('Location: index-en.html');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "?>" >> ../html/$ONTONAME/$ONTOVERSION/index.php
 
