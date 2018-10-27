@@ -1,0 +1,518 @@
+<http://ns.softwiki.de/req/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/elements/1.1/title> "Semantic Web Ontology for Requirements Engineering (SWORE)" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Jens Lehmann" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Kim Lauenroth" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Philipp Heim" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Sebastian Tramp" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Steffen Lohmann" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/contributor> "Thomas Riechert" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/licence> "http://creativecommons.org/licenses/by/3.0/" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-03-12" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-03-13" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2007-10-24" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-01-22" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-02-29" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2008-07-08" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-01-15" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-03-04" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2009-07-09" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2010-01-09" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2010-06-28" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2011-10-28" .
+<http://ns.softwiki.de/req/> <http://purl.org/dc/terms/modified> "2011-11-02" .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Web Ontology for Requirements Engineering (SWORE)" .
+<http://ns.softwiki.de/req/> <http://www.w3.org/2002/07/owl#versionInfo> "\n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen" .
+<http://ns.softwiki.de/req/> <http://xmlns.com/foaf/0.1/depiction> "http://ns.softwiki.de/req/img/sworeV2.png" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/licence
+<http://purl.org/dc/terms/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/depiction
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/conflicts
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#label> "conficts"@en .
+<http://ns.softwiki.de/req/conflicts> <http://www.w3.org/2000/01/rdf-schema#label> "steht im Konflikt zu"@de .
+# 
+# http://ns.softwiki.de/req/contains
+<http://ns.softwiki.de/req/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/contains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/contains> <http://www.w3.org/2000/01/rdf-schema#label> "beinhaltet"@de .
+<http://ns.softwiki.de/req/contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+# 
+# http://ns.softwiki.de/req/contributor
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Stakeholder> .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor"@en .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "trÃ¤gt bei"@de .
+# 
+# http://ns.softwiki.de/req/creator
+<http://ns.softwiki.de/req/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/contributor> .
+<http://ns.softwiki.de/req/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the req:Stakeholder that creates the resource of a req:Requirements." .
+<http://ns.softwiki.de/req/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<http://ns.softwiki.de/req/creator> <http://www.w3.org/2000/01/rdf-schema#label> "hat erstellt"@de .
+# 
+# http://ns.softwiki.de/req/dependsOn
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/entails> .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#label> "depends on"@en .
+<http://ns.softwiki.de/req/dependsOn> <http://www.w3.org/2000/01/rdf-schema#label> "hängt ab von"@de .
+# 
+# http://ns.softwiki.de/req/details
+<http://ns.softwiki.de/req/details> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isDetailedBy> .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#label> "detailliert"@de .
+<http://ns.softwiki.de/req/details> <http://www.w3.org/2000/01/rdf-schema#label> "details"@en .
+# 
+# http://ns.softwiki.de/req/enrichedBy
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/muto/core#taggedWith> .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rdfs.org/sioc/ns#about> .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Enrichment> .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#label> "angereichert durch"@de .
+<http://ns.softwiki.de/req/enrichedBy> <http://www.w3.org/2000/01/rdf-schema#label> "enriched by"@en .
+# 
+# http://ns.softwiki.de/req/entails
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#label> "entails"@en .
+<http://ns.softwiki.de/req/entails> <http://www.w3.org/2000/01/rdf-schema#label> "hat zur Folge"@de .
+# 
+# http://ns.softwiki.de/req/hasProject
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Project> .
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "gehÃ¶rt zu Projekt"@de .
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "has Project"@en .
+_:genid1 <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/hasProject> .
+# 
+# http://ns.softwiki.de/req/invalidates
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/isInvalidFor> .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#label> "erklärt ungültig"@de .
+<http://ns.softwiki.de/req/invalidates> <http://www.w3.org/2000/01/rdf-schema#label> "invalidates"@en .
+# 
+# http://ns.softwiki.de/req/isDetailedBy
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#label> "detailed by"@en .
+<http://ns.softwiki.de/req/isDetailedBy> <http://www.w3.org/2000/01/rdf-schema#label> "detailliert durch"@de .
+# 
+# http://ns.softwiki.de/req/isInvalidFor
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#label> "invalid for"@en .
+<http://ns.softwiki.de/req/isInvalidFor> <http://www.w3.org/2000/01/rdf-schema#label> "ungültig für"@de .
+# 
+# http://ns.softwiki.de/req/isPartOf
+<http://ns.softwiki.de/req/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/isPartOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/contains> .
+<http://ns.softwiki.de/req/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://ns.softwiki.de/req/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Teil von"@de .
+# 
+# http://ns.softwiki.de/req/isRedundantTo
+<http://ns.softwiki.de/req/isRedundantTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isRedundantTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/isRedundantTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/isRedundantTo> <http://www.w3.org/2000/01/rdf-schema#label> "redundant to"@en .
+<http://ns.softwiki.de/req/isRedundantTo> <http://www.w3.org/2000/01/rdf-schema#label> "redundant zu"@de .
+# 
+# http://ns.softwiki.de/req/isRequiredBy
+<http://ns.softwiki.de/req/isRequiredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isRequiredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/isRequiredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/requires> .
+<http://ns.softwiki.de/req/isRequiredBy> <http://www.w3.org/2000/01/rdf-schema#label> "benötigt"@de .
+<http://ns.softwiki.de/req/isRequiredBy> <http://www.w3.org/2000/01/rdf-schema#label> "requires"@en .
+# 
+# http://ns.softwiki.de/req/isSimilarTo
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "similar to"@en .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "Ã¤hnlich wie"@de .
+# 
+# http://ns.softwiki.de/req/lastContributor
+<http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/contributor> .
+<http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the req:Stakeholder that made the latest contribution on a req:Requirements." .
+<http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/2000/01/rdf-schema#label> "Last Contributor"@en .
+<http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/2000/01/rdf-schema#label> "hat zuletzt beigetragen"@de .
+# 
+# http://ns.softwiki.de/req/lastModifiedBy
+<http://ns.softwiki.de/req/lastModifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/lastModifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/lastContributor> .
+<http://ns.softwiki.de/req/lastModifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Letzter Autor"@de .
+<http://ns.softwiki.de/req/lastModifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "last author"@en .
+<http://ns.softwiki.de/req/lastModifiedBy> <http://www.w3.org/2002/07/owl#versionInfo> "Deprecated - use lastContributor instead." .
+# 
+# http://ns.softwiki.de/req/references
+<http://ns.softwiki.de/req/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/references> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/subject> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#primarySubject> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
+<http://ns.softwiki.de/req/references> <http://www.w3.org/2000/01/rdf-schema#label> "referenziert"@de .
+# 
+# http://ns.softwiki.de/req/relation
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/2000/01/rdf-schema#label> "is related to"@en .
+<http://ns.softwiki.de/req/relation> <http://www.w3.org/2000/01/rdf-schema#label> "steht in Beziehung zu"@de .
+# 
+# http://ns.softwiki.de/req/requires
+<http://ns.softwiki.de/req/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/requires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
+<http://ns.softwiki.de/req/requires> <http://www.w3.org/2000/01/rdf-schema#label> "benötigt"@de .
+<http://ns.softwiki.de/req/requires> <http://www.w3.org/2000/01/rdf-schema#label> "requires"@en .
+# 
+# http://ns.softwiki.de/req/source
+<http://ns.softwiki.de/req/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.softwiki.de/req/source> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/source> .
+<http://ns.softwiki.de/req/source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/source> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/source> <http://www.w3.org/2000/01/rdf-schema#label> "has source"@en .
+<http://ns.softwiki.de/req/source> <http://www.w3.org/2000/01/rdf-schema#label> "hat Quelle"@de .
+# 
+# http://purl.org/dc/terms/contributer
+<http://purl.org/dc/terms/contributer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/dc/terms/contributer> .
+# 
+# http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/relation
+<http://purl.org/dc/terms/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid3 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/dc/terms/source> .
+# 
+# http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid4 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/dc/terms/subject> .
+# 
+# http://purl.org/muto/core#taggedWith
+<http://purl.org/muto/core#taggedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid5 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/muto/core#taggedWith> .
+# 
+# http://rdfs.org/sioc/ns#about
+<http://rdfs.org/sioc/ns#about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid6 <http://www.w3.org/2002/07/owl#inverseOf> <http://rdfs.org/sioc/ns#about> .
+# 
+# http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag
+<http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid7 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag> .
+# 
+# http://www.w3.org/2004/02/skos/core#primarySubject
+<http://www.w3.org/2004/02/skos/core#primarySubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/priority
+<http://ns.softwiki.de/req/priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/priority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/priority> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the priority of a req:Requirement." .
+<http://ns.softwiki.de/req/priority> <http://www.w3.org/2000/01/rdf-schema#label> "hat Priorität"@de .
+<http://ns.softwiki.de/req/priority> <http://www.w3.org/2000/01/rdf-schema#label> "priority"@en .
+# 
+# http://ns.softwiki.de/req/quality
+<http://ns.softwiki.de/req/quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/quality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/quality> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the quality of a req:Requirement." .
+<http://ns.softwiki.de/req/quality> <http://www.w3.org/2000/01/rdf-schema#label> "hat Qualität"@de .
+<http://ns.softwiki.de/req/quality> <http://www.w3.org/2000/01/rdf-schema#label> "quality"@en .
+# 
+# http://ns.softwiki.de/req/status
+<http://ns.softwiki.de/req/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.softwiki.de/req/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
+<http://ns.softwiki.de/req/status> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the state of a req:Requirement." .
+<http://ns.softwiki.de/req/status> <http://www.w3.org/2000/01/rdf-schema#label> "hat Status"@de .
+<http://ns.softwiki.de/req/status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ns.softwiki.de/req/Document
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error4> .
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Document> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents Documents that are source of a Requirement. Such documents may be standards, a law, manuals, screenshots etc.. req:Document is aligned to foaf:Document." .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<http://ns.softwiki.de/req/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Dokument"@de .
+# 
+# http://ns.softwiki.de/req/Enrichment
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error1> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdfs.org/sioc/ns#Item> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error2> .
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdfs.org/sioc/ns#Item> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/2000/01/rdf-schema#comment> "Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging." .
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/2000/01/rdf-schema#label> "Anreicherung"@de .
+<http://ns.softwiki.de/req/Enrichment> <http://www.w3.org/2000/01/rdf-schema#label> "Enrichment"@en .
+# 
+# http://ns.softwiki.de/req/ExistingSystem
+<http://ns.softwiki.de/req/ExistingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ExistingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/ExistingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application." .
+<http://ns.softwiki.de/req/ExistingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Bestehendes System"@de .
+<http://ns.softwiki.de/req/ExistingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Existing System"@en .
+# 
+# http://ns.softwiki.de/req/GlossaryTerm
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error3> .
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/ReferencePoint> .
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag." .
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/2000/01/rdf-schema#label> "Glossarbegriff"@de .
+<http://ns.softwiki.de/req/GlossaryTerm> <http://www.w3.org/2000/01/rdf-schema#label> "Glossary Term"@en .
+# 
+# http://ns.softwiki.de/req/PriorityRating
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Stakeholder can define one rating about the priority for each requirement." .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#label> "Gewichtung"@de .
+<http://ns.softwiki.de/req/PriorityRating> <http://www.w3.org/2000/01/rdf-schema#label> "Priority Rating"@en .
+# 
+# http://ns.softwiki.de/req/Project
+<http://ns.softwiki.de/req/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Project> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error9> .
+<http://org.semanticweb.owlapi/error#Error9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://usefulinc.com/ns/doap#Project> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Project> <http://www.w3.org/2000/01/rdf-schema#comment> "The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects." .
+<http://ns.softwiki.de/req/Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project"@en .
+<http://ns.softwiki.de/req/Project> <http://www.w3.org/2000/01/rdf-schema#label> "Projekt"@de .
+# 
+# http://ns.softwiki.de/req/QualityRating
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Stakeholder can define one rating about the quality for each requirement." .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#label> "Quality Rating"@en .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#label> "QualitÃ¤tsbewertung"@de .
+# 
+# http://ns.softwiki.de/req/ReferencePoint
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error7> .
+<http://org.semanticweb.owlapi/error#Error7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error8> .
+<http://org.semanticweb.owlapi/error#Error8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference point is a resource that is related to the req:Requirement. The resources range from domain specific topics, represented by skos:Concept, Tags (tags:Tag), req:GlossaryTerms. The class req:ReferencePoint is also very important to document the traces, e.g. from requirement to source code." .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Point"@en .
+<http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Referenzpunkt"@de .
+# 
+# http://ns.softwiki.de/req/Requirement
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm)." .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Anforderung"@de .
+<http://ns.softwiki.de/req/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en .
+# 
+# http://ns.softwiki.de/req/Source
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2000/01/rdf-schema#comment> "The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document." .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2000/01/rdf-schema#label> "Anforderungsquelle"@de .
+<http://ns.softwiki.de/req/Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source of the Requirement"@en .
+# 
+# http://ns.softwiki.de/req/Stakeholder
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error5> .
+<http://org.semanticweb.owlapi/error#Error5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error6> .
+<http://org.semanticweb.owlapi/error#Error6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.softwiki.de/req/Source> .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc.." .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder"@de .
+<http://ns.softwiki.de/req/Stakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder"@en .
+# 
+# http://ns.softwiki.de/req/Vote
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule: Every Author only votes at most one requirement." .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#label> "Abstimmung"@de .
+<http://ns.softwiki.de/req/Vote> <http://www.w3.org/2000/01/rdf-schema#label> "Vote"@en .
+# 
+# http://org.semanticweb.owlapi/error#Error1
+# 
+# http://org.semanticweb.owlapi/error#Error2
+# 
+# http://org.semanticweb.owlapi/error#Error3
+# 
+# http://org.semanticweb.owlapi/error#Error4
+# 
+# http://org.semanticweb.owlapi/error#Error5
+# 
+# http://org.semanticweb.owlapi/error#Error6
+# 
+# http://org.semanticweb.owlapi/error#Error7
+# 
+# http://org.semanticweb.owlapi/error#Error8
+# 
+# http://org.semanticweb.owlapi/error#Error9
+# 
+# http://purl.org/muto/core#Tagging
+<http://purl.org/muto/core#Tagging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/sioc/ns#Item
+<http://rdfs.org/sioc/ns#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/sioc/types#Poll
+<http://rdfs.org/sioc/types#Poll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://usefulinc.com/ns/doap#Project
+<http://usefulinc.com/ns/doap#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag
+<http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

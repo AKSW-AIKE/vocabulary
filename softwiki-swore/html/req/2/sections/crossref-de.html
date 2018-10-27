@@ -1,0 +1,1119 @@
+<h2  id="crossreference" class="list">Cross reference for Semantic Web Ontology for Requirements Engineering (SWORE) classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Semantic Web Ontology for Requirements Engineering (SWORE).
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Vote" title="http://ns.softwiki.de/req/Vote">Abstimmung</a>
+      </li>
+      <li>
+         <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+      </li>
+      <li>
+         <a href="#Source" title="http://ns.softwiki.de/req/Source">Anforderungsquelle</a>
+      </li>
+      <li>
+         <a href="#Enrichment" title="http://ns.softwiki.de/req/Enrichment">Anreicherung</a>
+      </li>
+      <li>
+         <a href="#ExistingSystem" title="http://ns.softwiki.de/req/ExistingSystem">Bestehendes System</a>
+      </li>
+      <li>
+         <a href="#Document" title="http://ns.softwiki.de/req/Document">Dokument</a>
+      </li>
+      <li>
+         <a href="#PriorityRating" title="http://ns.softwiki.de/req/PriorityRating">Gewichtung</a>
+      </li>
+      <li>
+         <a href="#GlossaryTerm" title="http://ns.softwiki.de/req/GlossaryTerm">Glossarbegriff</a>
+      </li>
+      <li>
+         <a href="#Project" title="http://ns.softwiki.de/req/Project">Projekt</a>
+      </li>
+      <li>
+         <a href="#QualityRating" title="http://ns.softwiki.de/req/QualityRating">QualitÃ¤tsbewertung</a>
+      </li>
+      <li>
+         <a href="#ReferencePoint" title="http://ns.softwiki.de/req/ReferencePoint">Referenzpunkt</a>
+      </li>
+      <li>
+         <a href="#Stakeholder" title="http://ns.softwiki.de/req/Stakeholder">Stakeholder</a>
+      </li>
+   </ul>
+   <div class="entity" id="Vote">
+      <h3>Abstimmung<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Vote</p>
+      <div class="comment">
+         <span class="markdown">Rule: Every Author only votes at most one requirement.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://rdfs.org/sioc/types#Poll">poll</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Requirement">
+      <h3>Anforderung<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Requirement</p>
+      <div class="comment">
+         <span class="markdown">The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm).</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#enrichedBy" title="http://ns.softwiki.de/req/enrichedBy">angereichert durch</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isDetailedBy" title="http://ns.softwiki.de/req/isDetailedBy">detailliert durch</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasProject" title="http://ns.softwiki.de/req/hasProject">gehÃ¶rt zu Projekt</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#priority" title="http://ns.softwiki.de/req/priority">hat Priorität</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#quality" title="http://ns.softwiki.de/req/quality">hat Qualität</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#source" title="http://ns.softwiki.de/req/source">hat Quelle</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#status" title="http://ns.softwiki.de/req/status">hat Status</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#references" title="http://ns.softwiki.de/req/references">referenziert</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#contributor" title="http://ns.softwiki.de/req/contributor">trÃ¤gt bei</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isDetailedBy" title="http://ns.softwiki.de/req/isDetailedBy">detailliert durch</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Source">
+      <h3>Anforderungsquelle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Source</p>
+      <div class="comment">
+         <span class="markdown">The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ExistingSystem" title="http://ns.softwiki.de/req/ExistingSystem">Bestehendes System</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Document" title="http://ns.softwiki.de/req/Document">Dokument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Stakeholder" title="http://ns.softwiki.de/req/Stakeholder">Stakeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#source" title="http://ns.softwiki.de/req/source">hat Quelle</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Enrichment">
+      <h3>Anreicherung<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Enrichment</p>
+      <div class="comment">
+         <span class="markdown">Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error1">error1</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://rdfs.org/sioc/ns#Item">item</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error2">error2</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://rdfs.org/sioc/ns#Item">item</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#enrichedBy" title="http://ns.softwiki.de/req/enrichedBy">angereichert durch</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExistingSystem">
+      <h3>Bestehendes System<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/ExistingSystem</p>
+      <div class="comment">
+         <span class="markdown">This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Source" title="http://ns.softwiki.de/req/Source">Anforderungsquelle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Document">
+      <h3>Dokument<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Document</p>
+      <div class="comment">
+         <span class="markdown">This class represents Documents that are source of a Requirement. Such documents may be standards, a law, manuals, screenshots etc.. req:Document is aligned to foaf:Document.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error4">error4</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Document">document</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Source" title="http://ns.softwiki.de/req/Source">Anforderungsquelle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PriorityRating">
+      <h3>Gewichtung<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/PriorityRating</p>
+      <div class="comment">
+         <span class="markdown">Stakeholder can define one rating about the priority for each requirement.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://rdfs.org/sioc/types#Poll">poll</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GlossaryTerm">
+      <h3>Glossarbegriff<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/GlossaryTerm</p>
+      <div class="comment">
+         <span class="markdown">Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error3">error3</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted"
+                  title="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag">tag</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ReferencePoint" title="http://ns.softwiki.de/req/ReferencePoint">Referenzpunkt</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Project">
+      <h3>Projekt<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Project</p>
+      <div class="comment">
+         <span class="markdown">The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error9">error9</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://usefulinc.com/ns/doap#Project">project</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasProject" title="http://ns.softwiki.de/req/hasProject">gehÃ¶rt zu Projekt</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="QualityRating">
+      <h3>QualitÃ¤tsbewertung<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/QualityRating</p>
+      <div class="comment">
+         <span class="markdown">Stakeholder can define one rating about the quality for each requirement.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://rdfs.org/sioc/types#Poll">poll</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReferencePoint">
+      <h3>Referenzpunkt<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/ReferencePoint</p>
+      <div class="comment">
+         <span class="markdown">A reference point is a resource that is related to the req:Requirement. The resources range from domain specific topics, represented by skos:Concept, Tags (tags:Tag), req:GlossaryTerms. The class req:ReferencePoint is also very important to document the traces, e.g. from requirement to source code.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error7">error7</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error8">error8</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted"
+                  title="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag">tag</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GlossaryTerm" title="http://ns.softwiki.de/req/GlossaryTerm">Glossarbegriff</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#references" title="http://ns.softwiki.de/req/references">referenziert</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Stakeholder">
+      <h3>Stakeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/Stakeholder</p>
+      <div class="comment">
+         <span class="markdown">This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc..</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error5">error5</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error6">error6</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Source" title="http://ns.softwiki.de/req/Source">Anforderungsquelle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#contributor" title="http://ns.softwiki.de/req/contributor">trÃ¤gt bei</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#enrichedBy" title="http://ns.softwiki.de/req/enrichedBy">angereichert durch</a>
+      </li>
+      <li>
+         <a href="#contains" title="http://ns.softwiki.de/req/contains">beinhaltet</a>
+      </li>
+      <li>
+         <a href="#isRequiredBy" title="http://ns.softwiki.de/req/isRequiredBy">benötigt</a>
+      </li>
+      <li>
+         <a href="#requires" title="http://ns.softwiki.de/req/requires">benötigt</a>
+      </li>
+      <li>
+         <a href="#details" title="http://ns.softwiki.de/req/details">detailliert</a>
+      </li>
+      <li>
+         <a href="#isDetailedBy" title="http://ns.softwiki.de/req/isDetailedBy">detailliert durch</a>
+      </li>
+      <li>
+         <a href="#invalidates" title="http://ns.softwiki.de/req/invalidates">erklärt ungültig</a>
+      </li>
+      <li>
+         <a href="#hasProject" title="http://ns.softwiki.de/req/hasProject">gehÃ¶rt zu Projekt</a>
+      </li>
+      <li>
+         <a href="#creator" title="http://ns.softwiki.de/req/creator">hat erstellt</a>
+      </li>
+      <li>
+         <a href="#source" title="http://ns.softwiki.de/req/source">hat Quelle</a>
+      </li>
+      <li>
+         <a href="#lastContributor" title="http://ns.softwiki.de/req/lastContributor">hat zuletzt beigetragen</a>
+      </li>
+      <li>
+         <a href="#entails" title="http://ns.softwiki.de/req/entails">hat zur Folge</a>
+      </li>
+      <li>
+         <a href="#dependsOn" title="http://ns.softwiki.de/req/dependsOn">hängt ab von</a>
+      </li>
+      <li>
+         <a href="#isPartOf" title="http://ns.softwiki.de/req/isPartOf">ist Teil von</a>
+      </li>
+      <li>
+         <a href="#lastModifiedBy" title="http://ns.softwiki.de/req/lastModifiedBy">Letzter Autor</a>
+      </li>
+      <li>
+         <a href="#isRedundantTo" title="http://ns.softwiki.de/req/isRedundantTo">redundant zu</a>
+      </li>
+      <li>
+         <a href="#references" title="http://ns.softwiki.de/req/references">referenziert</a>
+      </li>
+      <li>
+         <a href="#conflicts" title="http://ns.softwiki.de/req/conflicts">steht im Konflikt zu</a>
+      </li>
+      <li>
+         <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+      </li>
+      <li>
+         <a href="#contributor" title="http://ns.softwiki.de/req/contributor">trÃ¤gt bei</a>
+      </li>
+      <li>
+         <a href="#isInvalidFor" title="http://ns.softwiki.de/req/isInvalidFor">ungültig für</a>
+      </li>
+      <li>
+         <a href="#isSimilarTo" title="http://ns.softwiki.de/req/isSimilarTo">Ã¤hnlich wie</a>
+      </li>
+   </ul>
+   <div class="entity" id="enrichedBy">
+      <h3>angereichert durch<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/enrichedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/muto/core#taggedWith">tagged with</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <span class="dotted" title="http://rdfs.org/sioc/ns#about">about</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Enrichment" title="http://ns.softwiki.de/req/Enrichment">Anreicherung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contains">
+      <h3>beinhaltet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/contains</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPartOf" title="http://ns.softwiki.de/req/isPartOf">ist Teil von</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isRequiredBy">
+      <h3>benötigt<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isRequiredBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#requires" title="http://ns.softwiki.de/req/requires">benötigt</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requires">
+      <h3>benötigt<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/requires</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isRequiredBy" title="http://ns.softwiki.de/req/isRequiredBy">benötigt</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="details">
+      <h3>detailliert<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/details</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isDetailedBy" title="http://ns.softwiki.de/req/isDetailedBy">detailliert durch</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDetailedBy">
+      <h3>detailliert durch<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isDetailedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#details" title="http://ns.softwiki.de/req/details">detailliert</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="invalidates">
+      <h3>erklärt ungültig<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/invalidates</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isInvalidFor" title="http://ns.softwiki.de/req/isInvalidFor">ungültig für</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProject">
+      <h3>gehÃ¶rt zu Projekt<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/hasProject</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Project" title="http://ns.softwiki.de/req/Project">Projekt</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="creator">
+      <h3>hat erstellt<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/creator</p>
+      <div class="comment">
+         <span class="markdown">Indicates the req:Stakeholder that creates the resource of a req:Requirements.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#contributor" title="http://ns.softwiki.de/req/contributor">trÃ¤gt bei</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="source">
+      <h3>hat Quelle<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/source</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/source">source</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Source" title="http://ns.softwiki.de/req/Source">Anforderungsquelle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lastContributor">
+      <h3>hat zuletzt beigetragen<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/lastContributor</p>
+      <div class="comment">
+         <span class="markdown">Indicates the req:Stakeholder that made the latest contribution on a req:Requirements.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#contributor" title="http://ns.softwiki.de/req/contributor">trÃ¤gt bei</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#lastModifiedBy" title="http://ns.softwiki.de/req/lastModifiedBy">Letzter Autor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="entails">
+      <h3>hat zur Folge<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/entails</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#dependsOn" title="http://ns.softwiki.de/req/dependsOn">hängt ab von</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dependsOn">
+      <h3>hängt ab von<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/dependsOn</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#entails" title="http://ns.softwiki.de/req/entails">hat zur Folge</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPartOf">
+      <h3>ist Teil von<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isPartOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#contains" title="http://ns.softwiki.de/req/contains">beinhaltet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lastModifiedBy">
+      <h3>Letzter Autor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/lastModifiedBy</p>
+      <dl>
+         <dt>Current version:</dt>
+         <dd>Deprecated - use lastContributor instead.</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#lastContributor" title="http://ns.softwiki.de/req/lastContributor">hat zuletzt beigetragen</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isRedundantTo">
+      <h3>redundant zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isRedundantTo</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> symmetric</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="references">
+      <h3>referenziert<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/references</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/references">references</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/subject">subject</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <span class="dotted"
+                     title="http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag">tagged with tag</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/2004/02/skos/core#primarySubject">primary subject</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ReferencePoint" title="http://ns.softwiki.de/req/ReferencePoint">Referenzpunkt</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="conflicts">
+      <h3>steht im Konflikt zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/conflicts</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> symmetric</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relation">
+      <h3>steht in Beziehung zu<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/relation</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#contains" title="http://ns.softwiki.de/req/contains">beinhaltet</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isRequiredBy" title="http://ns.softwiki.de/req/isRequiredBy">benötigt</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#requires" title="http://ns.softwiki.de/req/requires">benötigt</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#details" title="http://ns.softwiki.de/req/details">detailliert</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#invalidates" title="http://ns.softwiki.de/req/invalidates">erklärt ungültig</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#entails" title="http://ns.softwiki.de/req/entails">hat zur Folge</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf" title="http://ns.softwiki.de/req/isPartOf">ist Teil von</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isRedundantTo" title="http://ns.softwiki.de/req/isRedundantTo">redundant zu</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#conflicts" title="http://ns.softwiki.de/req/conflicts">steht im Konflikt zu</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isInvalidFor" title="http://ns.softwiki.de/req/isInvalidFor">ungültig für</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isSimilarTo" title="http://ns.softwiki.de/req/isSimilarTo">Ã¤hnlich wie</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contributor">
+      <h3>trÃ¤gt bei<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/contributor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">contributor</span>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#creator" title="http://ns.softwiki.de/req/creator">hat erstellt</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#lastContributor" title="http://ns.softwiki.de/req/lastContributor">hat zuletzt beigetragen</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Stakeholder" title="http://ns.softwiki.de/req/Stakeholder">Stakeholder</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isInvalidFor">
+      <h3>ungültig für<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isInvalidFor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#invalidates" title="http://ns.softwiki.de/req/invalidates">erklärt ungültig</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSimilarTo">
+      <h3>Ã¤hnlich wie<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/isSimilarTo</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> symmetric</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#relation" title="http://ns.softwiki.de/req/relation">steht in Beziehung zu</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#priority" title="http://ns.softwiki.de/req/priority">hat Priorität</a>
+      </li>
+      <li>
+         <a href="#quality" title="http://ns.softwiki.de/req/quality">hat Qualität</a>
+      </li>
+      <li>
+         <a href="#status" title="http://ns.softwiki.de/req/status">hat Status</a>
+      </li>
+   </ul>
+   <div class="entity" id="priority">
+      <h3>hat Priorität<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/priority</p>
+      <div class="comment">
+         <span class="markdown">Describes the priority of a req:Requirement.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quality">
+      <h3>hat Qualität<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/quality</p>
+      <div class="comment">
+         <span class="markdown">Describes the quality of a req:Requirement.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="status">
+      <h3>hat Status<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ns.softwiki.de/req/status</p>
+      <div class="comment">
+         <span class="markdown">Defines the state of a req:Requirement.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://ns.softwiki.de/req/Requirement">Anforderung</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/depiction" title="http://xmlns.com/foaf/0.1/depiction">
+            <span>depiction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/licence" title="http://purl.org/dc/terms/licence">
+            <span>licence</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+            <span>modified</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/depiction">
+      <h3>depiction<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/depiction</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/licence">
+      <h3>licence<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/licence</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/modified">
+      <h3>modified<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+            <span>creator</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/creator">
+      <h3>creator<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty">object property</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

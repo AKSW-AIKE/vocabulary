@@ -1,0 +1,20 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-de.html> a prov:Entity;
+	 dc:title "Semantic Web Ontology for Requirements Engineering (SWORE)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2011-11-02";
+.
+:agent0 a prov:Agent; foaf:name "Jens Lehmann".
+:agent1 a prov:Agent; foaf:name "Kim Lauenroth".
+:agent2 a prov:Agent; foaf:name "Philipp Heim".
+:agent3 a prov:Agent; foaf:name "Sebastian Tramp".
+:agent4 a prov:Agent; foaf:name "Steffen Lohmann".
+:agent5 a prov:Agent; foaf:name "Thomas Riechert".
