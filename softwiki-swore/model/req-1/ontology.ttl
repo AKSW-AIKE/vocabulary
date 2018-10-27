@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix req: <http://ns.softwiki.de/req/> .
 
 <http://ns.softwiki.de/req/>
     rdfs:label "SoftWiki Ontology for Requirements Engineering (SWORE)"^^xsd:string ;

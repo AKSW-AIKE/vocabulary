@@ -1,0 +1,125 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "title" : {
+      "undefined" : "SoftWiki Ontology for Requirements Engineering (SWORE)"
+    },
+    "iri" : "http://ns.softwiki.de/req/",
+    "version" : "version 1.05 - for requirements management we added an general class ApplicationDecision \nversion 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \nversion 1.03 - alignement to tag und dc improved; \nversion 1.01 - Alignment to SIOC, FOAF and SKOS added\nversion 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\nversion 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\nversion 0.7 - Sebastian Dietzold - labels completed and namespace correction\nversion 0.6 - name space changed to ns.softwiki.de/req\nversion 0.5 - refined by Thomas according to ESWC Poster submission \nversion 0.4 - refined by Jens on the way home from Essen\nversion 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\nversion 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\nversion 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
+    "labels" : {
+      "undefined" : "SoftWiki Ontology for Requirements Engineering (SWORE)"
+    },
+    "comments" : {
+      "undefined" : "A requirements engineering ontology for the SoftWiki methodology."
+    },
+    "other" : {
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Philipp Heim",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Thomas Riechert",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Steffen Lohmann",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jens Lehmann",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Sebastian Tramp",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Kim Lauenroth",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2009-07-09",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2007-10-24",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2009-01-15",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2008-01-22",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2009-03-04",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2010-01-09",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2008-07-08",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2007-03-13",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2010-06-22",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2007-03-12",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2008-02-29",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "version 1.05 - for requirements management we added an general class ApplicationDecision \nversion 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \nversion 1.03 - alignement to tag und dc improved; \nversion 1.01 - Alignment to SIOC, FOAF and SKOS added\nversion 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\nversion 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\nversion 0.7 - Sebastian Dietzold - labels completed and namespace correction\nversion 0.6 - name space changed to ns.softwiki.de/req\nversion 0.5 - refined by Thomas according to ESWC Poster submission \nversion 0.4 - refined by Jens on the way home from Essen\nversion 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\nversion 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\nversion 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "SoftWiki Ontology for Requirements Engineering (SWORE)",
+        "type" : "label"
+      } ],
+      "depiction" : [ {
+        "identifier" : "depiction",
+        "language" : "undefined",
+        "value" : "http://softwiki.de/netzwerk/wp-content/uploads/2010/01/swore-version-1-04.png",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ]
+}
