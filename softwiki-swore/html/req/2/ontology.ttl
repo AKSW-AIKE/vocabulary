@@ -105,7 +105,7 @@
              rdfs:domain :Requirement ;
              rdfs:range :Stakeholder ;
              rdfs:label "Contributor"@en ,
-                        "trÃ¤gt bei"@de .
+                        "trägt bei"@de .
 
 
 ###  http://ns.softwiki.de/req/creator
@@ -152,7 +152,7 @@
 :hasProject rdf:type owl:ObjectProperty ;
             rdfs:domain :Requirement ;
             rdfs:range :Project ;
-            rdfs:label "gehÃ¶rt zu Projekt"@de ,
+            rdfs:label "gehört zu Projekt"@de ,
                        "has Project"@en .
 
 [ owl:inverseOf :hasProject
@@ -211,7 +211,7 @@
              rdfs:subPropertyOf :relation ;
              rdf:type owl:SymmetricProperty ;
              rdfs:label "similar to"@en ,
-                        "Ã¤hnlich wie"@de .
+                        "ähnlich wie"@de .
 
 
 ###  http://ns.softwiki.de/req/lastContributor
@@ -437,7 +437,7 @@
                rdfs:subClassOf <http://rdfs.org/sioc/types#Poll> ;
                rdfs:comment "Stakeholder can define one rating about the quality for each requirement." ;
                rdfs:label "Quality Rating"@en ,
-                          "QualitÃ¤tsbewertung"@de .
+                          "Qualitätsbewertung"@de .
 
 
 ###  http://ns.softwiki.de/req/ReferencePoint

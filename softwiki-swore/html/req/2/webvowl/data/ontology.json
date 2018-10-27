@@ -1,5 +1,5 @@
 {
-  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "de", "en", "undefined" ],
     "baseIris" : [ "http://purl.org/muto/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://usefulinc.com/ns/doap", "http://www.holygoat.co.uk/owl/redwood/0.1/tags", "http://ns.softwiki.de/req", "http://www.w3.org/2001/XMLSchema", "http://rdfs.org/sioc/types", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://org.semanticweb.owlapi/error", "http://xmlns.com/foaf/0.1", "http://rdfs.org/sioc/ns", "http://www.w3.org/2004/02/skos/core" ],
@@ -21,22 +21,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Philipp Heim",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Steffen Lohmann",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Kim Lauenroth",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Thomas Riechert",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Philipp Heim",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -48,31 +38,31 @@
         "language" : "undefined",
         "value" : "Sebastian Tramp",
         "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Kim Lauenroth",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Steffen Lohmann",
+        "type" : "label"
       } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2007-03-13",
+        "value" : "2011-10-28",
         "type" : "label"
       }, {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2007-03-12",
+        "value" : "2007-10-24",
         "type" : "label"
       }, {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2008-01-22",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2008-07-08",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2009-03-04",
         "type" : "label"
       }, {
         "identifier" : "modified",
@@ -87,12 +77,17 @@
       }, {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2007-10-24",
+        "value" : "2007-03-12",
         "type" : "label"
       }, {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2008-02-29",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2008-07-08",
         "type" : "label"
       }, {
         "identifier" : "modified",
@@ -107,12 +102,17 @@
       }, {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2009-07-09",
+        "value" : "2007-03-13",
         "type" : "label"
       }, {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2011-10-28",
+        "value" : "2009-03-04",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2009-07-09",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -136,12 +136,6 @@
     }
   },
   "namespace" : [ ],
-  "metrics" : {
-    "classCount" : 30,
-    "objectPropertyCount" : 32,
-    "datatypePropertyCount" : 5,
-    "individualCount" : 1
-  },
   "class" : [ {
     "id" : "0",
     "type" : "owl:Class"
@@ -152,7 +146,7 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "17",
@@ -167,7 +161,7 @@
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "28",
@@ -176,13 +170,13 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "33",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
     "id" : "39",
@@ -191,10 +185,10 @@
     "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -212,7 +206,7 @@
     "id" : "65",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "49",
+    "id" : "47",
     "type" : "rdfs:Literal"
   }, {
     "id" : "66",
@@ -224,19 +218,19 @@
     "id" : "5",
     "type" : "owl:Thing"
   }, {
-    "id" : "36",
+    "id" : "32",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "32",
+    "id" : "34",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "13",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "56",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
     "id" : "20",
@@ -275,16 +269,6 @@
     "attributes" : [ "external" ],
     "id" : "10"
   }, {
-    "iri" : "http://rdfs.org/sioc/types#Poll",
-    "baseIri" : "http://rdfs.org/sioc/types",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Poll"
-    },
-    "subClasses" : [ "12", "13", "14" ],
-    "attributes" : [ "external" ],
-    "id" : "11"
-  }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -292,7 +276,17 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "11"
+  }, {
+    "iri" : "http://rdfs.org/sioc/types#Poll",
+    "baseIri" : "http://rdfs.org/sioc/types",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poll"
+    },
+    "subClasses" : [ "13", "14", "15" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
   }, {
     "iri" : "http://ns.softwiki.de/req/Enrichment",
     "baseIri" : "http://ns.softwiki.de/req",
@@ -347,8 +341,8 @@
     "comment" : {
       "undefined" : "Stakeholder can define one rating about the priority for each requirement."
     },
-    "id" : "12",
-    "superClasses" : [ "11" ]
+    "id" : "13",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error7",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -376,13 +370,13 @@
       "IRI-based" : "GlossaryTerm",
       "en" : "Glossary Term"
     },
-    "intersection" : [ "33", "34" ],
+    "intersection" : [ "35", "36" ],
     "comment" : {
       "undefined" : "Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag."
     },
     "attributes" : [ "intersection" ],
-    "id" : "31",
-    "superClasses" : [ "32" ]
+    "id" : "33",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error2",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -400,7 +394,7 @@
       "IRI-based" : "Error3"
     },
     "attributes" : [ "external" ],
-    "id" : "33"
+    "id" : "35"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error8",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -420,20 +414,6 @@
     "attributes" : [ "external" ],
     "id" : "40"
   }, {
-    "iri" : "http://ns.softwiki.de/req/QualityRating",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "instances" : 0,
-    "label" : {
-      "de" : "QualitÃ¤tsbewertung",
-      "IRI-based" : "QualityRating",
-      "en" : "Quality Rating"
-    },
-    "comment" : {
-      "undefined" : "Stakeholder can define one rating about the quality for each requirement."
-    },
-    "id" : "14",
-    "superClasses" : [ "11" ]
-  }, {
     "iri" : "http://usefulinc.com/ns/doap#Project",
     "baseIri" : "http://usefulinc.com/ns/doap",
     "instances" : 0,
@@ -442,6 +422,20 @@
     },
     "attributes" : [ "external" ],
     "id" : "43"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/QualityRating",
+    "baseIri" : "http://ns.softwiki.de/req",
+    "instances" : 0,
+    "label" : {
+      "de" : "Qualitätsbewertung",
+      "IRI-based" : "QualityRating",
+      "en" : "Quality Rating"
+    },
+    "comment" : {
+      "undefined" : "Stakeholder can define one rating about the quality for each requirement."
+    },
+    "id" : "15",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.org/muto/core#Tagging",
     "baseIri" : "http://purl.org/muto/core",
@@ -499,7 +493,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "49",
+    "id" : "47",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -520,7 +514,7 @@
       "IRI-based" : "Stakeholder",
       "en" : "Stakeholder"
     },
-    "intersection" : [ "22", "27", "15" ],
+    "intersection" : [ "22", "27", "11" ],
     "comment" : {
       "undefined" : "This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc.."
     },
@@ -536,7 +530,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "36",
+    "id" : "32",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -550,13 +544,13 @@
       "IRI-based" : "ReferencePoint",
       "en" : "Reference Point"
     },
-    "subClasses" : [ "31" ],
-    "intersection" : [ "28", "10", "34", "39" ],
+    "subClasses" : [ "33" ],
+    "intersection" : [ "28", "10", "36", "39" ],
     "comment" : {
       "undefined" : "A reference point is a resource that is related to the req:Requirement. The resources range from domain specific topics, represented by skos:Concept, Tags (tags:Tag), req:GlossaryTerms. The class req:ReferencePoint is also very important to document the traces, e.g. from requirement to source code."
     },
     "attributes" : [ "intersection" ],
-    "id" : "32"
+    "id" : "34"
   }, {
     "iri" : "http://ns.softwiki.de/req/Vote",
     "baseIri" : "http://ns.softwiki.de/req",
@@ -569,8 +563,8 @@
     "comment" : {
       "undefined" : "Rule: Every Author only votes at most one requirement."
     },
-    "id" : "13",
-    "superClasses" : [ "11" ]
+    "id" : "14",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -588,7 +582,7 @@
       "IRI-based" : "Tag"
     },
     "attributes" : [ "external" ],
-    "id" : "34"
+    "id" : "36"
   }, {
     "iri" : "http://rdfs.org/sioc/ns#Item",
     "baseIri" : "http://rdfs.org/sioc/ns",
@@ -657,7 +651,7 @@
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "35",
+    "id" : "31",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "37",
@@ -676,10 +670,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "48",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "26",
     "type" : "owl:objectProperty"
@@ -702,7 +696,7 @@
     "id" : "25",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "67",
@@ -720,10 +714,10 @@
     "id" : "70",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "71",
+    "id" : "58",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
+    "id" : "71",
     "type" : "owl:objectProperty"
   }, {
     "id" : "30",
@@ -747,32 +741,32 @@
     "id" : "59",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "60",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "57",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "62",
     "type" : "owl:objectProperty"
   }, {
     "id" : "77",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "79",
-    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://ns.softwiki.de/req/isRequiredBy",
@@ -811,14 +805,14 @@
     },
     "superproperty" : [ "7" ],
     "domain" : "5",
-    "attributes" : [ "object", "symmetric" ],
+    "attributes" : [ "symmetric", "object" ],
     "id" : "16"
   }, {
     "iri" : "http://ns.softwiki.de/req/contributor",
     "baseIri" : "http://ns.softwiki.de/req",
     "range" : "3",
     "label" : {
-      "de" : "trÃ¤gt bei",
+      "de" : "trägt bei",
       "IRI-based" : "contributor",
       "en" : "Contributor"
     },
@@ -836,12 +830,12 @@
     },
     "domain" : "5",
     "subproperty" : [ "30" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "29"
   }, {
     "iri" : "http://ns.softwiki.de/req/quality",
     "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "36",
+    "range" : "32",
     "label" : {
       "de" : "hat Qualität",
       "IRI-based" : "quality",
@@ -852,7 +846,7 @@
       "undefined" : "Describes the quality of a req:Requirement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "35"
+    "id" : "31"
   }, {
     "iri" : "http://purl.org/dc/terms/subject",
     "baseIri" : "http://purl.org/dc/terms",
@@ -862,7 +856,7 @@
     },
     "domain" : "5",
     "subproperty" : [ "30" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "37"
   }, {
     "iri" : "http://ns.softwiki.de/req/conflicts",
@@ -875,7 +869,7 @@
     },
     "superproperty" : [ "7" ],
     "domain" : "5",
-    "attributes" : [ "object", "symmetric" ],
+    "attributes" : [ "symmetric", "object" ],
     "id" : "38"
   }, {
     "iri" : "http://ns.softwiki.de/req/isInvalidFor",
@@ -920,8 +914,18 @@
     },
     "domain" : "5",
     "subproperty" : [ "45" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "44"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "46"
   }, {
     "iri" : "http://purl.org/dc/terms/source",
     "baseIri" : "http://purl.org/dc/terms",
@@ -930,18 +934,8 @@
       "IRI-based" : "source"
     },
     "domain" : "5",
-    "subproperty" : [ "47" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://purl.org/dc/terms/description",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "subproperty" : [ "49" ],
+    "attributes" : [ "external", "object" ],
     "id" : "48"
   }, {
     "iri" : "http://ns.softwiki.de/req/creator",
@@ -967,22 +961,22 @@
       "IRI-based" : "contributer"
     },
     "domain" : "5",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "50"
   }, {
-    "range" : "11",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
-    "range" : "32",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
-    "range" : "11",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
     "iri" : "http://ns.softwiki.de/req/relation",
@@ -1024,54 +1018,43 @@
       "IRI-based" : "source",
       "en" : "has source"
     },
-    "superproperty" : [ "46" ],
+    "superproperty" : [ "48" ],
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "49"
   }, {
     "range" : "0",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "iri" : "http://ns.softwiki.de/req/isSimilarTo",
     "baseIri" : "http://ns.softwiki.de/req",
     "range" : "5",
     "label" : {
-      "de" : "Ã¤hnlich wie",
+      "de" : "ähnlich wie",
       "IRI-based" : "isSimilarTo",
       "en" : "similar to"
     },
     "superproperty" : [ "7" ],
     "domain" : "5",
-    "attributes" : [ "object", "symmetric" ],
+    "attributes" : [ "symmetric", "object" ],
     "id" : "63"
   }, {
-    "range" : "11",
-    "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
-  }, {
-    "iri" : "http://www.w3.org/2004/02/skos/core#primarySubject",
-    "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "primarySubject"
-    },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "71"
   }, {
     "iri" : "http://ns.softwiki.de/req/contains",
     "baseIri" : "http://ns.softwiki.de/req",
@@ -1086,15 +1069,26 @@
     "attributes" : [ "object" ],
     "id" : "58"
   }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#primarySubject",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "primarySubject"
+    },
+    "domain" : "5",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "71"
+  }, {
     "iri" : "http://ns.softwiki.de/req/references",
     "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "32",
+    "range" : "34",
     "label" : {
       "de" : "referenziert",
       "IRI-based" : "references",
       "en" : "references"
     },
-    "superproperty" : [ "29", "71", "37", "72" ],
+    "superproperty" : [ "71", "29", "37", "72" ],
     "domain" : "9",
     "attributes" : [ "object" ],
     "id" : "30"
@@ -1103,7 +1097,7 @@
     "baseIri" : "http://ns.softwiki.de/req",
     "range" : "74",
     "label" : {
-      "de" : "gehÃ¶rt zu Projekt",
+      "de" : "gehört zu Projekt",
       "IRI-based" : "hasProject",
       "en" : "has Project"
     },
@@ -1161,7 +1155,7 @@
     },
     "domain" : "5",
     "subproperty" : [ "23" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "24"
   }, {
     "iri" : "http://ns.softwiki.de/req/invalidates",
@@ -1177,6 +1171,17 @@
     "domain" : "5",
     "attributes" : [ "object" ],
     "id" : "59"
+  }, {
+    "iri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag",
+    "baseIri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "taggedWithTag"
+    },
+    "domain" : "5",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
   }, {
     "iri" : "http://ns.softwiki.de/req/enrichedBy",
     "baseIri" : "http://ns.softwiki.de/req",
@@ -1204,31 +1209,6 @@
     "attributes" : [ "object" ],
     "id" : "6"
   }, {
-    "iri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag",
-    "baseIri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "taggedWithTag"
-    },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "72"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/isPartOf",
-    "inverse" : "58",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "ist Teil von",
-      "IRI-based" : "isPartOf",
-      "en" : "is part of"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "60"
-  }, {
     "iri" : "http://ns.softwiki.de/req/priority",
     "baseIri" : "http://ns.softwiki.de/req",
     "range" : "65",
@@ -1244,6 +1224,20 @@
     "attributes" : [ "datatype" ],
     "id" : "78"
   }, {
+    "iri" : "http://ns.softwiki.de/req/isPartOf",
+    "inverse" : "58",
+    "baseIri" : "http://ns.softwiki.de/req",
+    "range" : "5",
+    "label" : {
+      "de" : "ist Teil von",
+      "IRI-based" : "isPartOf",
+      "en" : "is part of"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
     "iri" : "http://purl.org/dc/terms/relation",
     "baseIri" : "http://purl.org/dc/terms",
     "range" : "5",
@@ -1252,8 +1246,18 @@
     },
     "domain" : "5",
     "subproperty" : [ "7" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "57"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
   }, {
     "iri" : "http://ns.softwiki.de/req/entails",
     "baseIri" : "http://ns.softwiki.de/req",
@@ -1276,17 +1280,7 @@
     },
     "domain" : "5",
     "subproperty" : [ "45" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "77"
-  }, {
-    "iri" : "http://purl.org/dc/terms/title",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "66",
-    "label" : {
-      "IRI-based" : "title"
-    },
-    "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "79"
   } ]
 }

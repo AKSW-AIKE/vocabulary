@@ -70,7 +70,7 @@
 <http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
 <http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Stakeholder> .
 <http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor"@en .
-<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "trÃ¤gt bei"@de .
+<http://ns.softwiki.de/req/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "trägt bei"@de .
 # 
 # http://ns.softwiki.de/req/creator
 <http://ns.softwiki.de/req/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -111,7 +111,7 @@
 <http://ns.softwiki.de/req/hasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ns.softwiki.de/req/Requirement> .
 <http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://ns.softwiki.de/req/Project> .
-<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "gehÃ¶rt zu Projekt"@de .
+<http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "gehört zu Projekt"@de .
 <http://ns.softwiki.de/req/hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "has Project"@en .
 _:genid1 <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/hasProject> .
 # 
@@ -161,7 +161,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#inverseOf> <http://ns.softwiki.de/req/ha
 <http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ns.softwiki.de/req/relation> .
 <http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
 <http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "similar to"@en .
-<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "Ã¤hnlich wie"@de .
+<http://ns.softwiki.de/req/isSimilarTo> <http://www.w3.org/2000/01/rdf-schema#label> "ähnlich wie"@de .
 # 
 # http://ns.softwiki.de/req/lastContributor
 <http://ns.softwiki.de/req/lastContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -383,7 +383,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/types#Poll> .
 <http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Stakeholder can define one rating about the quality for each requirement." .
 <http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#label> "Quality Rating"@en .
-<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#label> "QualitÃ¤tsbewertung"@de .
+<http://ns.softwiki.de/req/QualityRating> <http://www.w3.org/2000/01/rdf-schema#label> "Qualitätsbewertung"@de .
 # 
 # http://ns.softwiki.de/req/ReferencePoint
 <http://ns.softwiki.de/req/ReferencePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

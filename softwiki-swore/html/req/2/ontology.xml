@@ -146,7 +146,7 @@
         <rdfs:domain rdf:resource="http://ns.softwiki.de/req/Requirement"/>
         <rdfs:range rdf:resource="http://ns.softwiki.de/req/Stakeholder"/>
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
-        <rdfs:label xml:lang="de">trÃ¤gt bei</rdfs:label>
+        <rdfs:label xml:lang="de">trägt bei</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -217,7 +217,7 @@
     <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/hasProject">
         <rdfs:domain rdf:resource="http://ns.softwiki.de/req/Requirement"/>
         <rdfs:range rdf:resource="http://ns.softwiki.de/req/Project"/>
-        <rdfs:label xml:lang="de">gehÃ¶rt zu Projekt</rdfs:label>
+        <rdfs:label xml:lang="de">gehört zu Projekt</rdfs:label>
         <rdfs:label xml:lang="en">has Project</rdfs:label>
     </owl:ObjectProperty>
     <rdf:Description>
@@ -304,7 +304,7 @@
         <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/relation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:label xml:lang="en">similar to</rdfs:label>
-        <rdfs:label xml:lang="de">Ã¤hnlich wie</rdfs:label>
+        <rdfs:label xml:lang="de">ähnlich wie</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -658,7 +658,7 @@
         <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/types#Poll"/>
         <rdfs:comment>Stakeholder can define one rating about the quality for each requirement.</rdfs:comment>
         <rdfs:label xml:lang="en">Quality Rating</rdfs:label>
-        <rdfs:label xml:lang="de">QualitÃ¤tsbewertung</rdfs:label>
+        <rdfs:label xml:lang="de">Qualitätsbewertung</rdfs:label>
     </owl:Class>
     
 

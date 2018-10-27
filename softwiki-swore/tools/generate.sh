@@ -13,7 +13,7 @@ rm -R ../html/$ONTONAME/$ONTOVERSION/*
 java -jar widoco-1.4.6-jar-with-dependencies.jar -ontFile ../model/$ONTONAME-$ONTOVERSION/ontology.ttl -lang en-de -webVowl -rewriteAll -includeAnnotationProperties -outFolder ../html/$ONTONAME/$ONTOVERSION/
 
 #generate ontology to visualizey
-#java -jar OWL2VOWL-0.3.5-shaded.jar -file ../model/$ONTONAME-$ONTOVERSION/ontology.ttl -output ../html/$ONTONAME/$ONTOVERSION/webvowl/data/ontology.json
+java -jar OWL2VOWL-0.3.5-shaded.jar -file ../model/$ONTONAME-$ONTOVERSION/ontology.ttl -output ../html/$ONTONAME/$ONTOVERSION/webvowl/data/ontology.json
 
 
 #warte 5 Sekunden

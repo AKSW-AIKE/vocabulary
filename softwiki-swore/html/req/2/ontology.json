@@ -296,7 +296,7 @@
     "@value" : "Quality Rating"
   }, {
     "@language" : "de",
-    "@value" : "QualitÃ¤tsbewertung"
+    "@value" : "Qualitätsbewertung"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://rdfs.org/sioc/types#Poll"
@@ -419,7 +419,7 @@
     "@value" : "Contributor"
   }, {
     "@language" : "de",
-    "@value" : "trÃ¤gt bei"
+    "@value" : "trägt bei"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://ns.softwiki.de/req/Stakeholder"
@@ -514,7 +514,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
-    "@value" : "gehÃ¶rt zu Projekt"
+    "@value" : "gehört zu Projekt"
   }, {
     "@language" : "en",
     "@value" : "has Project"
@@ -620,7 +620,7 @@
     "@value" : "similar to"
   }, {
     "@language" : "de",
-    "@value" : "Ã¤hnlich wie"
+    "@value" : "ähnlich wie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://ns.softwiki.de/req/relation"
