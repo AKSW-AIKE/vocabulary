@@ -9,7 +9,7 @@ echo "Generating Documentation for $ONTONAME/$ONTOVERSION"
 mkdir ../html
 rm -R ../html/$ONTONAME/$ONTOVERSION
 
-#generate documentation for Version 1.9
+#generate documentation 
 java -jar widoco-1.4.6-jar-with-dependencies.jar -ontFile ../model/$ONTONAME-$ONTOVERSION/ontology.ttl -lang en-de -webVowl -rewriteAll -includeAnnotationProperties -outFolder ../html/$ONTONAME/$ONTOVERSION/
 
 #warte 5 Sekunden
