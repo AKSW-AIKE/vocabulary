@@ -10,9 +10,9 @@
 @prefix sioctypes: <http://rdfs.org/sioc/types#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> .
-@prefix req: <http://ns.softwiki.de/req/> .
+@prefix req: <http://ns.softwiki.de/req/2/> .
 
-<http://ns.softwiki.de/req/>
+<http://ns.softwiki.de/req/2/>
     dcterms:contributor "Jens Lehmann", "Kim Lauenroth", "Philipp Heim", "Sebastian Tramp", "Steffen Lohmann", "Thomas Riechert" ;
     dcterms:licence "http://creativecommons.org/licenses/by/3.0/" ;
     dcterms:modified "2007-03-12", "2007-03-13", "2007-10-24", "2008-01-22", "2008-02-29", "2008-07-08", "2009-01-15", "2009-03-04", "2009-07-09", "2010-01-09", "2010-06-28", "2011-10-28", "2011-11-02" ;
@@ -52,14 +52,14 @@
       version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen
       version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen
       version 0.1 - simple initial version by Thomas and Jens before meeting in Essen""" ;
-    foaf:depiction "http://ns.softwiki.de/req/img/sworeV2.png" .
+    foaf:depiction "http://ns.softwiki.de/req/2/img/sworeV2.png" .
 
-<http://ns.softwiki.de/req/Requirement>
+<http://ns.softwiki.de/req/2/Requirement>
     a owl:Class ;
     rdfs:comment "The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm)." ;
     rdfs:label "Requirement"@en, "Anforderung"@de .
 
-<http://ns.softwiki.de/req/Project>
+<http://ns.softwiki.de/req/2/Project>
     a owl:Class ;	
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( doap:Project
@@ -71,12 +71,12 @@
     rdfs:comment "The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects." ;
     rdfs:label "Project"@en, "Projekt"@de .
 
-<http://ns.softwiki.de/req/Source>
+<http://ns.softwiki.de/req/2/Source>
     a owl:Class ;
     rdfs:comment "The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document." ;
     rdfs:label "Source of the Requirement"@en, "Anforderungsquelle"@de .
 
-<http://ns.softwiki.de/req/Stakeholder>
+<http://ns.softwiki.de/req/2/Stakeholder>
     a owl:Class ;	
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( foaf:Agent
@@ -96,7 +96,7 @@
     rdfs:comment "This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc.." ;
     rdfs:label "Stakeholder"@en, "Stakeholder"@de .
 
-<http://ns.softwiki.de/req/Document>
+<http://ns.softwiki.de/req/2/Document>
     a owl:Class ;	
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( foaf:Document
@@ -109,13 +109,13 @@
     rdfs:comment "This class represents Documents that are source of a Requirement. Such documents may be standards, a law, manuals, screenshots etc.. req:Document is aligned to foaf:Document." ;  
     rdfs:label "Document"@en, "Dokument"@de .
 
-<http://ns.softwiki.de/req/ExistingSystem>
+<http://ns.softwiki.de/req/2/ExistingSystem>
     a owl:Class ;	
     rdfs:subClassOf req:Source ;
     rdfs:comment "This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application." ;  
     rdfs:label "Existing System"@en, "Bestehendes System"@de .
 
-<http://ns.softwiki.de/req/ReferencePoint>
+<http://ns.softwiki.de/req/2/ReferencePoint>
     a owl:Class ;		
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( skos:Concept 
@@ -134,7 +134,7 @@
     rdfs:comment "A reference point is a resource that is related to the req:Requirement. The resources range from domain specific topics, represented by skos:Concept, Tags (tags:Tag), req:GlossaryTerms. The class req:ReferencePoint is also very important to document the traces, e.g. from requirement to source code." ;
     rdfs:label "Reference Point"@en, "Referenzpunkt"@de .
 
-<http://ns.softwiki.de/req/GlossaryTerm>
+<http://ns.softwiki.de/req/2/GlossaryTerm>
     a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( tags:Tag 
@@ -147,7 +147,7 @@
     rdfs:comment "Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag." ;
     rdfs:label "Glossary Term"@en, "Glossarbegriff"@de .
 
-<http://ns.softwiki.de/req/Enrichment>
+<http://ns.softwiki.de/req/2/Enrichment>
     a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
 			  owl:intersectionOf ( sioc:Item 
@@ -166,166 +166,166 @@
     rdfs:comment "Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging." ;
     rdfs:label "Enrichment"@en, "Anreicherung"@de .
 
-<http://ns.softwiki.de/req/PriorityRating>
+<http://ns.softwiki.de/req/2/PriorityRating>
     a owl:Class ;
     rdfs:subClassOf sioctypes:Poll ;
     rdfs:comment "Stakeholder can define one rating about the priority for each requirement." ;
     rdfs:label "Priority Rating"@en, "Gewichtung"@de .
 
-<http://ns.softwiki.de/req/QualityRating>
+<http://ns.softwiki.de/req/2/QualityRating>
     a owl:Class ;
     rdfs:subClassOf sioctypes:Poll ;
     rdfs:comment "Stakeholder can define one rating about the quality for each requirement." ;
     rdfs:label "Quality Rating"@en, "Qualitätsbewertung"@de .
 
-<http://ns.softwiki.de/req/Vote>
+<http://ns.softwiki.de/req/2/Vote>
     a owl:Class ;
     rdfs:subClassOf sioctypes:Poll ;
     rdfs:comment "Rule: Every Author only votes at most one requirement." ;
     rdfs:label "Vote"@en, "Abstimmung"@de .
 
-<http://ns.softwiki.de/req/source>
+<http://ns.softwiki.de/req/2/source>
     a owl:ObjectProperty ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Source ;
     rdfs:subPropertyOf dcterms:source ;
     rdfs:label "has source"@en, "hat Quelle"@de .
 
-<http://ns.softwiki.de/req/hasProject>
+<http://ns.softwiki.de/req/2/hasProject>
     a owl:ObjectProperty ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Project ;
     rdfs:label "has Project"@en, "gehört zu Projekt"@de .
 
-<http://ns.softwiki.de/req/references>
+<http://ns.softwiki.de/req/2/references>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf dcterms:references, dcterms:subject, tags:taggedWithTag, skos:primarySubject ;
     rdfs:domain req:Requirement ;
     rdfs:range req:ReferencePoint ;
     rdfs:label "references"@en, "referenziert"@de .
 
-<http://ns.softwiki.de/req/enrichedBy>
+<http://ns.softwiki.de/req/2/enrichedBy>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf sioc:about, muto:taggedWith ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Enrichment ;
     rdfs:label "enriched by"@en, "angereichert durch"@de .
 
-<http://ns.softwiki.de/req/contributor>
+<http://ns.softwiki.de/req/2/contributor>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf dcterms:contributor ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Stakeholder ;
     rdfs:label "Contributor"@en, "trägt bei"@de .
 
-<http://ns.softwiki.de/req/creator>
+<http://ns.softwiki.de/req/2/creator>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:contributor ;
     rdfs:comment "Indicates the req:Stakeholder that creates the resource of a req:Requirements." ;
     rdfs:label "Creator"@en, "hat erstellt"@de .
 
-<http://ns.softwiki.de/req/lastContributor>
+<http://ns.softwiki.de/req/2/lastContributor>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:contributor ;
     rdfs:comment "Indicates the req:Stakeholder that made the latest contribution on a req:Requirements." ;
     rdfs:label "Last Contributor"@en, "hat zuletzt beigetragen"@de .
 
-<http://ns.softwiki.de/req/relation>
+<http://ns.softwiki.de/req/2/relation>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf dcterms:relation ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Requirement ;
     rdfs:label "is related to"@en, "steht in Beziehung zu"@de .
 
-<http://ns.softwiki.de/req/isRedundantTo>
+<http://ns.softwiki.de/req/2/isRedundantTo>
     a owl:ObjectProperty, owl:SymmetricProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "redundant to"@en, "redundant zu"@de .
 
-<http://ns.softwiki.de/req/isSimilarTo>
+<http://ns.softwiki.de/req/2/isSimilarTo>
     a owl:ObjectProperty, owl:SymmetricProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "similar to"@en, "ähnlich wie"@de .
 
-<http://ns.softwiki.de/req/contains>
+<http://ns.softwiki.de/req/2/contains>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "contains"@en , "beinhaltet"@de .
 
-<http://ns.softwiki.de/req/isPartOf>
+<http://ns.softwiki.de/req/2/isPartOf>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     owl:inverseOf req:contains ;
     rdfs:label "is part of"@en , "ist Teil von"@de .
 
-<http://ns.softwiki.de/req/requires>
+<http://ns.softwiki.de/req/2/requires>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "requires"@en , "benötigt"@de .
 
-<http://ns.softwiki.de/req/isRequiredBy>
+<http://ns.softwiki.de/req/2/isRequiredBy>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     owl:inverseOf req:requires ;
     rdfs:label "requires"@en , "benötigt"@de .
 
-<http://ns.softwiki.de/req/isInvalidFor>
+<http://ns.softwiki.de/req/2/isInvalidFor>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "invalid for"@en, "ungültig für"@de .
 
-<http://ns.softwiki.de/req/invalidates>
+<http://ns.softwiki.de/req/2/invalidates>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     owl:inverseOf req:isInvalidFor ;
     rdfs:label "invalidates"@en, "erklärt ungültig"@de .
 
-<http://ns.softwiki.de/req/entails>
+<http://ns.softwiki.de/req/2/entails>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "entails"@en, "hat zur Folge"@de .
 
-<http://ns.softwiki.de/req/dependsOn>
+<http://ns.softwiki.de/req/2/dependsOn>
     a owl:ObjectProperty ;
     owl:inverseOf req:entails ;
     rdfs:label "depends on"@en, "hängt ab von"@de .
 
-<http://ns.softwiki.de/req/details>
+<http://ns.softwiki.de/req/2/details>
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:relation ;
     owl:inverseOf req:isDetailedBy ;
     rdfs:label "details"@en, "detailliert"@de .
 
-<http://ns.softwiki.de/req/isDetailedBy>
+<http://ns.softwiki.de/req/2/isDetailedBy>
     a owl:ObjectProperty ;
     rdfs:domain req:Requirement ;
     rdfs:range req:Requirement ;
     rdfs:label "detailed by"@en, "detailliert durch"@de .
 
-<http://ns.softwiki.de/req/conflicts>
+<http://ns.softwiki.de/req/2/conflicts>
     a owl:ObjectProperty, owl:SymmetricProperty ;
     rdfs:subPropertyOf req:relation ;
     rdfs:label "conficts"@en, "steht im Konflikt zu"@de .
 
-<http://ns.softwiki.de/req/priority>
+<http://ns.softwiki.de/req/2/priority>
     a owl:DatatypeProperty ;
     rdfs:domain req:Requirement ;
     rdfs:comment "Describes the priority of a req:Requirement." ;
     rdfs:label "priority"@en , "hat Priorität"@de .
 
-<http://ns.softwiki.de/req/quality>
+<http://ns.softwiki.de/req/2/quality>
     a owl:DatatypeProperty ;
     rdfs:domain req:Requirement ;
     rdfs:comment "Describes the quality of a req:Requirement." ;
     rdfs:label "quality"@en, "hat Qualität"@de .
 
-<http://ns.softwiki.de/req/status>
+<http://ns.softwiki.de/req/2/status>
     a owl:DatatypeProperty ;
     rdfs:domain req:Requirement ;
     rdfs:comment "Defines the state of a req:Requirement." ;
     rdfs:label "status"@en , "hat Status"@de .
 
-<http://ns.softwiki.de/req/lastModifiedBy>
+<http://ns.softwiki.de/req/2/lastModifiedBy>
     owl:versionInfo "Deprecated - use lastContributor instead." ;
     a owl:ObjectProperty ;
     rdfs:subPropertyOf req:lastContributor ;

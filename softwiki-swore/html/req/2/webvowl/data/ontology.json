@@ -2,11 +2,11 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "de", "en", "undefined" ],
-    "baseIris" : [ "http://purl.org/muto/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://usefulinc.com/ns/doap", "http://www.holygoat.co.uk/owl/redwood/0.1/tags", "http://ns.softwiki.de/req", "http://www.w3.org/2001/XMLSchema", "http://rdfs.org/sioc/types", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://org.semanticweb.owlapi/error", "http://xmlns.com/foaf/0.1", "http://rdfs.org/sioc/ns", "http://www.w3.org/2004/02/skos/core" ],
+    "baseIris" : [ "http://purl.org/muto/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://usefulinc.com/ns/doap", "http://www.holygoat.co.uk/owl/redwood/0.1/tags", "http://ns.softwiki.de/req/2", "http://www.w3.org/2001/XMLSchema", "http://rdfs.org/sioc/types", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://org.semanticweb.owlapi/error", "http://xmlns.com/foaf/0.1", "http://rdfs.org/sioc/ns", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
       "undefined" : "Semantic Web Ontology for Requirements Engineering (SWORE)"
     },
-    "iri" : "http://ns.softwiki.de/req/",
+    "iri" : "http://ns.softwiki.de/req/2/",
     "version" : "\n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
     "labels" : {
       "undefined" : "Semantic Web Ontology for Requirements Engineering (SWORE)"
@@ -130,17 +130,23 @@
       "depiction" : [ {
         "identifier" : "depiction",
         "language" : "undefined",
-        "value" : "http://ns.softwiki.de/req/img/sworeV2.png",
+        "value" : "http://ns.softwiki.de/req/2/img/sworeV2.png",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "2",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -149,8 +155,8 @@
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
-    "type" : "owl:intersectionOf"
+    "id" : "20",
+    "type" : "owl:Class"
   }, {
     "id" : "21",
     "type" : "owl:Class"
@@ -158,107 +164,102 @@
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
+    "id" : "31",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "19",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "40",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
     "type" : "owl:Class"
   }, {
     "id" : "15",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "52",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
+    "id" : "33",
     "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "3",
-    "type" : "owl:intersectionOf"
   }, {
     "id" : "5",
-    "type" : "owl:Thing"
+    "type" : "owl:Class"
   }, {
-    "id" : "32",
-    "type" : "rdfs:Literal"
+    "id" : "13",
+    "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "75",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "74",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "9",
+    "id" : "1",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://ns.softwiki.de/req/Source",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/Enrichment",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
-      "de" : "Anforderungsquelle",
-      "IRI-based" : "Source",
-      "en" : "Source of the Requirement"
+      "de" : "Anreicherung",
+      "IRI-based" : "Enrichment",
+      "en" : "Enrichment"
     },
-    "subClasses" : [ "1", "2", "3" ],
+    "intersection" : [ "3", "4", "5" ],
     "comment" : {
-      "undefined" : "The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document."
+      "undefined" : "Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging."
     },
-    "id" : "0"
+    "attributes" : [ "intersection" ],
+    "id" : "2"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -267,7 +268,7 @@
       "IRI-based" : "Concept"
     },
     "attributes" : [ "external" ],
-    "id" : "10"
+    "id" : "6"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -276,7 +277,7 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "7"
   }, {
     "iri" : "http://rdfs.org/sioc/types#Poll",
     "baseIri" : "http://rdfs.org/sioc/types",
@@ -284,54 +285,12 @@
     "label" : {
       "IRI-based" : "Poll"
     },
-    "subClasses" : [ "13", "14", "15" ],
+    "subClasses" : [ "9", "10", "11" ],
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "8"
   }, {
-    "iri" : "http://ns.softwiki.de/req/Enrichment",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "instances" : 0,
-    "label" : {
-      "de" : "Anreicherung",
-      "IRI-based" : "Enrichment",
-      "en" : "Enrichment"
-    },
-    "intersection" : [ "18", "19", "20" ],
-    "comment" : {
-      "undefined" : "Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging."
-    },
-    "attributes" : [ "intersection" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://org.semanticweb.owlapi/error#Error4",
-    "baseIri" : "http://org.semanticweb.owlapi/error",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Error4"
-    },
-    "attributes" : [ "external" ],
-    "id" : "21"
-  }, {
-    "iri" : "http://org.semanticweb.owlapi/error#Error5",
-    "baseIri" : "http://org.semanticweb.owlapi/error",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Error5"
-    },
-    "attributes" : [ "external" ],
-    "id" : "22"
-  }, {
-    "iri" : "http://org.semanticweb.owlapi/error#Error6",
-    "baseIri" : "http://org.semanticweb.owlapi/error",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Error6"
-    },
-    "attributes" : [ "external" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/PriorityRating",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/PriorityRating",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Gewichtung",
@@ -341,8 +300,49 @@
     "comment" : {
       "undefined" : "Stakeholder can define one rating about the priority for each requirement."
     },
-    "id" : "13",
-    "superClasses" : [ "12" ]
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/Source",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "instances" : 0,
+    "label" : {
+      "de" : "Anforderungsquelle",
+      "IRI-based" : "Source",
+      "en" : "Source of the Requirement"
+    },
+    "subClasses" : [ "13", "14", "15" ],
+    "comment" : {
+      "undefined" : "The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error4",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error4"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error5",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error5"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error6",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error6"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error7",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -351,7 +351,7 @@
       "IRI-based" : "Error7"
     },
     "attributes" : [ "external" ],
-    "id" : "28"
+    "id" : "23"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error1",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -360,23 +360,7 @@
       "IRI-based" : "Error1"
     },
     "attributes" : [ "external" ],
-    "id" : "18"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/GlossaryTerm",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "instances" : 0,
-    "label" : {
-      "de" : "Glossarbegriff",
-      "IRI-based" : "GlossaryTerm",
-      "en" : "Glossary Term"
-    },
-    "intersection" : [ "35", "36" ],
-    "comment" : {
-      "undefined" : "Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag."
-    },
-    "attributes" : [ "intersection" ],
-    "id" : "33",
-    "superClasses" : [ "34" ]
+    "id" : "3"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error2",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -385,7 +369,7 @@
       "IRI-based" : "Error2"
     },
     "attributes" : [ "external" ],
-    "id" : "19"
+    "id" : "4"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error3",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -394,7 +378,23 @@
       "IRI-based" : "Error3"
     },
     "attributes" : [ "external" ],
-    "id" : "35"
+    "id" : "28"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/GlossaryTerm",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "instances" : 0,
+    "label" : {
+      "de" : "Glossarbegriff",
+      "IRI-based" : "GlossaryTerm",
+      "en" : "Glossary Term"
+    },
+    "intersection" : [ "28", "33" ],
+    "comment" : {
+      "undefined" : "Glossary terms are very important to understand the domain of a further project. They are derived from general tags extended by a description of the meaning of the tag."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "31",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error8",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -403,7 +403,7 @@
       "IRI-based" : "Error8"
     },
     "attributes" : [ "external" ],
-    "id" : "39"
+    "id" : "34"
   }, {
     "iri" : "http://org.semanticweb.owlapi/error#Error9",
     "baseIri" : "http://org.semanticweb.owlapi/error",
@@ -412,7 +412,7 @@
       "IRI-based" : "Error9"
     },
     "attributes" : [ "external" ],
-    "id" : "40"
+    "id" : "35"
   }, {
     "iri" : "http://usefulinc.com/ns/doap#Project",
     "baseIri" : "http://usefulinc.com/ns/doap",
@@ -421,10 +421,10 @@
       "IRI-based" : "Project"
     },
     "attributes" : [ "external" ],
-    "id" : "43"
+    "id" : "37"
   }, {
-    "iri" : "http://ns.softwiki.de/req/QualityRating",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/QualityRating",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Qualitätsbewertung",
@@ -434,8 +434,8 @@
     "comment" : {
       "undefined" : "Stakeholder can define one rating about the quality for each requirement."
     },
-    "id" : "15",
-    "superClasses" : [ "12" ]
+    "id" : "10",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://purl.org/muto/core#Tagging",
     "baseIri" : "http://purl.org/muto/core",
@@ -444,7 +444,7 @@
       "IRI-based" : "Tagging"
     },
     "attributes" : [ "external" ],
-    "id" : "52"
+    "id" : "48"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -460,100 +460,100 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "55"
+    "id" : "51"
   }, {
-    "iri" : "http://ns.softwiki.de/req/Document",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/Document",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Dokument",
       "IRI-based" : "Document",
       "en" : "Document"
     },
-    "intersection" : [ "21", "56" ],
+    "intersection" : [ "20", "52" ],
     "comment" : {
       "undefined" : "This class represents Documents that are source of a Requirement. Such documents may be standards, a law, manuals, screenshots etc.. req:Document is aligned to foaf:Document."
     },
     "attributes" : [ "intersection" ],
-    "id" : "1",
-    "superClasses" : [ "0" ]
+    "id" : "15",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "64",
+    "id" : "56",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "65",
+    "id" : "57",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "47",
+    "id" : "43",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "66",
+    "id" : "58",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://ns.softwiki.de/req/Stakeholder",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "instances" : 0,
-    "label" : {
-      "de" : "Stakeholder",
-      "IRI-based" : "Stakeholder",
-      "en" : "Stakeholder"
-    },
-    "intersection" : [ "22", "27", "11" ],
-    "comment" : {
-      "undefined" : "This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc.."
-    },
-    "attributes" : [ "intersection" ],
-    "id" : "3",
-    "superClasses" : [ "0" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "5",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "32",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://ns.softwiki.de/req/ReferencePoint",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/ReferencePoint",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Referenzpunkt",
       "IRI-based" : "ReferencePoint",
       "en" : "Reference Point"
     },
-    "subClasses" : [ "33" ],
-    "intersection" : [ "28", "10", "36", "39" ],
+    "subClasses" : [ "31" ],
+    "intersection" : [ "21", "22", "6", "33" ],
     "comment" : {
       "undefined" : "A reference point is a resource that is related to the req:Requirement. The resources range from domain specific topics, represented by skos:Concept, Tags (tags:Tag), req:GlossaryTerms. The class req:ReferencePoint is also very important to document the traces, e.g. from requirement to source code."
     },
     "attributes" : [ "intersection" ],
-    "id" : "34"
+    "id" : "32"
   }, {
-    "iri" : "http://ns.softwiki.de/req/Vote",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/Stakeholder",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "instances" : 0,
+    "label" : {
+      "de" : "Stakeholder",
+      "IRI-based" : "Stakeholder",
+      "en" : "Stakeholder"
+    },
+    "intersection" : [ "23", "7", "34" ],
+    "comment" : {
+      "undefined" : "This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc.."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/Vote",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Abstimmung",
@@ -563,8 +563,8 @@
     "comment" : {
       "undefined" : "Rule: Every Author only votes at most one requirement."
     },
-    "id" : "14",
-    "superClasses" : [ "12" ]
+    "id" : "9",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -573,7 +573,7 @@
       "IRI-based" : "Document"
     },
     "attributes" : [ "external" ],
-    "id" : "56"
+    "id" : "52"
   }, {
     "iri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag",
     "baseIri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags",
@@ -582,7 +582,7 @@
       "IRI-based" : "Tag"
     },
     "attributes" : [ "external" ],
-    "id" : "36"
+    "id" : "33"
   }, {
     "iri" : "http://rdfs.org/sioc/ns#Item",
     "baseIri" : "http://rdfs.org/sioc/ns",
@@ -591,10 +591,10 @@
       "IRI-based" : "Item"
     },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "5"
   }, {
-    "iri" : "http://ns.softwiki.de/req/ExistingSystem",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/ExistingSystem",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Bestehendes System",
@@ -604,26 +604,26 @@
     "comment" : {
       "undefined" : "This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application."
     },
-    "id" : "2",
-    "superClasses" : [ "0" ]
+    "id" : "13",
+    "superClasses" : [ "12" ]
   }, {
-    "iri" : "http://ns.softwiki.de/req/Project",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/Project",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Projekt",
       "IRI-based" : "Project",
       "en" : "Project"
     },
-    "intersection" : [ "43", "40" ],
+    "intersection" : [ "37", "35" ],
     "comment" : {
       "undefined" : "The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects."
     },
     "attributes" : [ "intersection" ],
-    "id" : "74"
+    "id" : "75"
   }, {
-    "iri" : "http://ns.softwiki.de/req/Requirement",
-    "baseIri" : "http://ns.softwiki.de/req",
+    "iri" : "http://ns.softwiki.de/req/2/Requirement",
+    "baseIri" : "http://ns.softwiki.de/req/2",
     "instances" : 0,
     "label" : {
       "de" : "Anforderung",
@@ -633,74 +633,71 @@
     "comment" : {
       "undefined" : "The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm)."
     },
-    "id" : "9"
+    "id" : "1"
   } ],
   "property" : [ {
-    "id" : "4",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "8",
+    "id" : "0",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
     "type" : "owl:objectProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "31",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "37",
+    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
     "id" : "38",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "40",
     "type" : "owl:objectProperty"
   }, {
     "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
     "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
-    "type" : "owl:datatypeProperty"
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "48",
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
+    "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "53",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "54",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "7",
+    "id" : "19",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "25",
+    "id" : "30",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "67",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "68",
     "type" : "rdfs:SubClassOf"
@@ -708,186 +705,134 @@
     "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "70",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
+    "id" : "54",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "71",
+    "id" : "64",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "73",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "75",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "76",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "24",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "59",
+    "id" : "66",
     "type" : "owl:objectProperty"
   }, {
     "id" : "72",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "78",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "60",
+    "id" : "67",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "57",
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
     "type" : "owl:objectProperty"
   }, {
     "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "62",
+    "id" : "77",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "77",
+    "id" : "47",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://ns.softwiki.de/req/isRequiredBy",
-    "inverse" : "6",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "benötigt",
-      "IRI-based" : "isRequiredBy",
-      "en" : "requires"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "4"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/isDetailedBy",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "9",
+    "iri" : "http://ns.softwiki.de/req/2/isDetailedBy",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "1",
     "label" : {
       "de" : "detailliert durch",
       "IRI-based" : "isDetailedBy",
       "en" : "detailed by"
     },
-    "domain" : "9",
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "8"
+    "id" : "0"
   }, {
-    "iri" : "http://ns.softwiki.de/req/isRedundantTo",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "redundant zu",
-      "IRI-based" : "isRedundantTo",
-      "en" : "redundant to"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "symmetric", "object" ],
-    "id" : "16"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/contributor",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "3",
+    "iri" : "http://ns.softwiki.de/req/2/contributor",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "14",
     "label" : {
       "de" : "trägt bei",
       "IRI-based" : "contributor",
       "en" : "Contributor"
     },
-    "superproperty" : [ "24" ],
-    "domain" : "9",
-    "subproperty" : [ "25", "26" ],
+    "superproperty" : [ "17" ],
+    "domain" : "1",
+    "subproperty" : [ "18", "19" ],
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "16"
   }, {
     "iri" : "http://purl.org/dc/terms/references",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "references"
     },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
+    "domain" : "25",
+    "subproperty" : [ "26" ],
     "attributes" : [ "external", "object" ],
-    "id" : "29"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/quality",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "32",
-    "label" : {
-      "de" : "hat Qualität",
-      "IRI-based" : "quality",
-      "en" : "quality"
-    },
-    "domain" : "9",
-    "comment" : {
-      "undefined" : "Describes the quality of a req:Requirement."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "31"
+    "id" : "24"
   }, {
     "iri" : "http://purl.org/dc/terms/subject",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "subject"
     },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
+    "domain" : "25",
+    "subproperty" : [ "26" ],
     "attributes" : [ "external", "object" ],
-    "id" : "37"
+    "id" : "27"
   }, {
-    "iri" : "http://ns.softwiki.de/req/conflicts",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/conflicts",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
       "de" : "steht im Konflikt zu",
       "IRI-based" : "conflicts",
       "en" : "conficts"
     },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
+    "superproperty" : [ "30" ],
+    "domain" : "25",
     "attributes" : [ "symmetric", "object" ],
-    "id" : "38"
+    "id" : "29"
   }, {
-    "iri" : "http://ns.softwiki.de/req/isInvalidFor",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "ungültig für",
-      "IRI-based" : "isInvalidFor",
-      "en" : "invalid for"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/lastModifiedBy",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/lastModifiedBy",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "annotations" : {
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -901,386 +846,441 @@
       "IRI-based" : "lastModifiedBy",
       "en" : "last author"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "5",
+    "superproperty" : [ "19" ],
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "42"
+    "id" : "36"
   }, {
     "iri" : "http://rdfs.org/sioc/ns#about",
     "baseIri" : "http://rdfs.org/sioc/ns",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "about"
     },
-    "domain" : "5",
-    "subproperty" : [ "45" ],
+    "domain" : "25",
+    "subproperty" : [ "39" ],
     "attributes" : [ "external", "object" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://purl.org/dc/terms/description",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "5",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "46"
+    "id" : "38"
   }, {
     "iri" : "http://purl.org/dc/terms/source",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "source"
     },
-    "domain" : "5",
-    "subproperty" : [ "49" ],
+    "domain" : "25",
+    "subproperty" : [ "41" ],
     "attributes" : [ "external", "object" ],
-    "id" : "48"
+    "id" : "40"
   }, {
-    "iri" : "http://ns.softwiki.de/req/creator",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/creator",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
       "de" : "hat erstellt",
       "IRI-based" : "creator",
       "en" : "Creator"
     },
-    "superproperty" : [ "23" ],
-    "domain" : "5",
+    "superproperty" : [ "16" ],
+    "domain" : "25",
     "comment" : {
       "undefined" : "Indicates the req:Stakeholder that creates the resource of a req:Requirements."
     },
     "attributes" : [ "object" ],
-    "id" : "26"
+    "id" : "18"
   }, {
     "iri" : "http://purl.org/dc/terms/contributer",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "contributer"
     },
-    "domain" : "5",
+    "domain" : "25",
     "attributes" : [ "external", "object" ],
-    "id" : "50"
+    "id" : "44"
   }, {
     "range" : "12",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
+    "id" : "45"
   }, {
-    "range" : "34",
-    "domain" : "33",
+    "iri" : "http://ns.softwiki.de/req/2/isRequiredBy",
+    "inverse" : "47",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "benötigt",
+      "IRI-based" : "isRequiredBy",
+      "en" : "requires"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "range" : "32",
+    "domain" : "31",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
+    "id" : "49"
   }, {
     "range" : "12",
     "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "54"
+    "id" : "50"
   }, {
-    "iri" : "http://ns.softwiki.de/req/relation",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "9",
+    "iri" : "http://ns.softwiki.de/req/2/entails",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
-      "de" : "steht in Beziehung zu",
-      "IRI-based" : "relation",
-      "en" : "is related to"
+      "de" : "hat zur Folge",
+      "IRI-based" : "entails",
+      "en" : "entails"
     },
-    "superproperty" : [ "57" ],
-    "domain" : "9",
-    "subproperty" : [ "4", "58", "59", "6", "60", "61", "38", "62", "16", "41", "63" ],
+    "superproperty" : [ "30" ],
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "7"
+    "id" : "53"
   }, {
-    "iri" : "http://ns.softwiki.de/req/lastContributor",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/references",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "32",
     "label" : {
-      "de" : "hat zuletzt beigetragen",
-      "IRI-based" : "lastContributor",
-      "en" : "Last Contributor"
+      "de" : "referenziert",
+      "IRI-based" : "references",
+      "en" : "references"
     },
-    "superproperty" : [ "23" ],
-    "domain" : "5",
-    "subproperty" : [ "42" ],
-    "comment" : {
-      "undefined" : "Indicates the req:Stakeholder that made the latest contribution on a req:Requirements."
-    },
+    "superproperty" : [ "54", "24", "27", "55" ],
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "26"
   }, {
-    "iri" : "http://ns.softwiki.de/req/source",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "0",
+    "iri" : "http://ns.softwiki.de/req/2/source",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "12",
     "label" : {
       "de" : "hat Quelle",
       "IRI-based" : "source",
       "en" : "has source"
     },
-    "superproperty" : [ "48" ],
-    "domain" : "9",
-    "attributes" : [ "object" ],
-    "id" : "49"
-  }, {
-    "range" : "0",
+    "superproperty" : [ "40" ],
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "67"
+    "attributes" : [ "object" ],
+    "id" : "41"
   }, {
-    "range" : "0",
-    "domain" : "2",
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/lastContributor",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "hat zuletzt beigetragen",
+      "IRI-based" : "lastContributor",
+      "en" : "Last Contributor"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "25",
+    "subproperty" : [ "36" ],
+    "comment" : {
+      "undefined" : "Indicates the req:Stakeholder that made the latest contribution on a req:Requirements."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/relation",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "1",
+    "label" : {
+      "de" : "steht in Beziehung zu",
+      "IRI-based" : "relation",
+      "en" : "is related to"
+    },
+    "superproperty" : [ "60" ],
+    "domain" : "1",
+    "subproperty" : [ "61", "53", "62", "63", "64", "65", "29", "66", "46", "47", "67" ],
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "8",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
-    "range" : "0",
-    "domain" : "3",
+    "range" : "8",
+    "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
     "id" : "69"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/isSimilarTo",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "ähnlich wie",
-      "IRI-based" : "isSimilarTo",
-      "en" : "similar to"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "symmetric", "object" ],
-    "id" : "63"
   }, {
     "range" : "12",
     "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
-    "iri" : "http://ns.softwiki.de/req/contains",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "beinhaltet",
-      "IRI-based" : "contains",
-      "en" : "contains"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "58"
-  }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#primarySubject",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "primarySubject"
     },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
+    "domain" : "25",
+    "subproperty" : [ "26" ],
     "attributes" : [ "external", "object" ],
-    "id" : "71"
+    "id" : "54"
   }, {
-    "iri" : "http://ns.softwiki.de/req/references",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "34",
+    "iri" : "http://ns.softwiki.de/req/2/isSimilarTo",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
-      "de" : "referenziert",
-      "IRI-based" : "references",
-      "en" : "references"
+      "de" : "ähnlich wie",
+      "IRI-based" : "isSimilarTo",
+      "en" : "similar to"
     },
-    "superproperty" : [ "71", "29", "37", "72" ],
-    "domain" : "9",
-    "attributes" : [ "object" ],
-    "id" : "30"
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "symmetric", "object" ],
+    "id" : "64"
   }, {
-    "iri" : "http://ns.softwiki.de/req/hasProject",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "74",
-    "label" : {
-      "de" : "gehört zu Projekt",
-      "IRI-based" : "hasProject",
-      "en" : "has Project"
-    },
-    "domain" : "9",
-    "attributes" : [ "object" ],
-    "id" : "73"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/details",
-    "inverse" : "8",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "9",
+    "iri" : "http://ns.softwiki.de/req/2/details",
+    "inverse" : "0",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "1",
     "label" : {
       "de" : "detailliert",
       "IRI-based" : "details",
       "en" : "details"
     },
-    "superproperty" : [ "7" ],
-    "domain" : "9",
+    "superproperty" : [ "30" ],
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "61"
+    "id" : "66"
   }, {
-    "iri" : "http://ns.softwiki.de/req/status",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "64",
-    "label" : {
-      "de" : "hat Status",
-      "IRI-based" : "status",
-      "en" : "status"
-    },
-    "domain" : "9",
-    "comment" : {
-      "undefined" : "Defines the state of a req:Requirement."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "75"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/dependsOn",
-    "inverse" : "62",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/dependsOn",
+    "inverse" : "53",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
       "de" : "hängt ab von",
       "IRI-based" : "dependsOn",
       "en" : "depends on"
     },
-    "domain" : "5",
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "76"
+    "id" : "72"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/status",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "71",
+    "label" : {
+      "de" : "hat Status",
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Defines the state of a req:Requirement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
   }, {
     "iri" : "http://purl.org/dc/terms/contributor",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "contributor"
     },
-    "domain" : "5",
-    "subproperty" : [ "23" ],
+    "domain" : "25",
+    "subproperty" : [ "16" ],
     "attributes" : [ "external", "object" ],
-    "id" : "24"
+    "id" : "17"
   }, {
-    "iri" : "http://ns.softwiki.de/req/invalidates",
-    "inverse" : "41",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/isInvalidFor",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
-      "de" : "erklärt ungültig",
-      "IRI-based" : "invalidates",
-      "en" : "invalidates"
+      "de" : "ungültig für",
+      "IRI-based" : "isInvalidFor",
+      "en" : "invalid for"
     },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
+    "superproperty" : [ "30" ],
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "63"
   }, {
     "iri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedWithTag",
     "baseIri" : "http://www.holygoat.co.uk/owl/redwood/0.1/tags",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "taggedWithTag"
     },
-    "domain" : "5",
-    "subproperty" : [ "30" ],
+    "domain" : "25",
+    "subproperty" : [ "26" ],
     "attributes" : [ "external", "object" ],
-    "id" : "72"
+    "id" : "55"
   }, {
-    "iri" : "http://ns.softwiki.de/req/enrichedBy",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "17",
+    "iri" : "http://ns.softwiki.de/req/2/hasProject",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "75",
     "label" : {
-      "de" : "angereichert durch",
-      "IRI-based" : "enrichedBy",
-      "en" : "enriched by"
+      "de" : "gehört zu Projekt",
+      "IRI-based" : "hasProject",
+      "en" : "has Project"
     },
-    "superproperty" : [ "44", "77" ],
-    "domain" : "9",
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "74"
   }, {
-    "iri" : "http://ns.softwiki.de/req/requires",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "benötigt",
-      "IRI-based" : "requires",
-      "en" : "requires"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "6"
-  }, {
-    "iri" : "http://ns.softwiki.de/req/priority",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "65",
+    "iri" : "http://ns.softwiki.de/req/2/priority",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "56",
     "label" : {
       "de" : "hat Priorität",
       "IRI-based" : "priority",
       "en" : "priority"
     },
-    "domain" : "9",
+    "domain" : "1",
     "comment" : {
       "undefined" : "Describes the priority of a req:Requirement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "78"
+    "id" : "76"
   }, {
-    "iri" : "http://ns.softwiki.de/req/isPartOf",
-    "inverse" : "58",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
+    "iri" : "http://ns.softwiki.de/req/2/isPartOf",
+    "inverse" : "61",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
     "label" : {
       "de" : "ist Teil von",
       "IRI-based" : "isPartOf",
       "en" : "is part of"
     },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
+    "superproperty" : [ "30" ],
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "60"
+    "id" : "65"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/enrichedBy",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "2",
+    "label" : {
+      "de" : "angereichert durch",
+      "IRI-based" : "enrichedBy",
+      "en" : "enriched by"
+    },
+    "superproperty" : [ "38", "77" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/quality",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "57",
+    "label" : {
+      "de" : "hat Qualität",
+      "IRI-based" : "quality",
+      "en" : "quality"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Describes the quality of a req:Requirement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/invalidates",
+    "inverse" : "63",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "erklärt ungültig",
+      "IRI-based" : "invalidates",
+      "en" : "invalidates"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/contains",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "beinhaltet",
+      "IRI-based" : "contains",
+      "en" : "contains"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/isRedundantTo",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "redundant zu",
+      "IRI-based" : "isRedundantTo",
+      "en" : "redundant to"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "symmetric", "object" ],
+    "id" : "62"
   }, {
     "iri" : "http://purl.org/dc/terms/relation",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "relation"
     },
-    "domain" : "5",
-    "subproperty" : [ "7" ],
+    "domain" : "25",
+    "subproperty" : [ "30" ],
     "attributes" : [ "external", "object" ],
-    "id" : "57"
+    "id" : "60"
   }, {
     "iri" : "http://purl.org/dc/terms/title",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "66",
+    "range" : "58",
     "label" : {
       "IRI-based" : "title"
     },
-    "domain" : "5",
+    "domain" : "25",
     "attributes" : [ "external", "datatype" ],
     "id" : "79"
   }, {
-    "iri" : "http://ns.softwiki.de/req/entails",
-    "baseIri" : "http://ns.softwiki.de/req",
-    "range" : "5",
-    "label" : {
-      "de" : "hat zur Folge",
-      "IRI-based" : "entails",
-      "en" : "entails"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "62"
-  }, {
     "iri" : "http://purl.org/muto/core#taggedWith",
     "baseIri" : "http://purl.org/muto/core",
-    "range" : "5",
+    "range" : "25",
     "label" : {
       "IRI-based" : "taggedWith"
     },
-    "domain" : "5",
-    "subproperty" : [ "45" ],
+    "domain" : "25",
+    "subproperty" : [ "39" ],
     "attributes" : [ "external", "object" ],
     "id" : "77"
+  }, {
+    "iri" : "http://ns.softwiki.de/req/2/requires",
+    "baseIri" : "http://ns.softwiki.de/req/2",
+    "range" : "25",
+    "label" : {
+      "de" : "benötigt",
+      "IRI-based" : "requires",
+      "en" : "requires"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "47"
   } ]
 }

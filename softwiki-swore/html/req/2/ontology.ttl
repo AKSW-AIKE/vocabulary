@@ -1,35 +1,35 @@
-@prefix : <http://ns.softwiki.de/req/> .
+@prefix : <http://ns.softwiki.de/req/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://ns.softwiki.de/req/> .
+@base <http://ns.softwiki.de/req/2/> .
 
-<http://ns.softwiki.de/req/> rdf:type owl:Ontology ;
-                              <http://purl.org/dc/elements/1.1/title> "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
-                              <http://purl.org/dc/terms/contributor> "Jens Lehmann" ,
-                                                                     "Kim Lauenroth" ,
-                                                                     "Philipp Heim" ,
-                                                                     "Sebastian Tramp" ,
-                                                                     "Steffen Lohmann" ,
-                                                                     "Thomas Riechert" ;
-                              <http://purl.org/dc/terms/licence> "http://creativecommons.org/licenses/by/3.0/" ;
-                              <http://purl.org/dc/terms/modified> "2007-03-12" ,
-                                                                  "2007-03-13" ,
-                                                                  "2007-10-24" ,
-                                                                  "2008-01-22" ,
-                                                                  "2008-02-29" ,
-                                                                  "2008-07-08" ,
-                                                                  "2009-01-15" ,
-                                                                  "2009-03-04" ,
-                                                                  "2009-07-09" ,
-                                                                  "2010-01-09" ,
-                                                                  "2010-06-28" ,
-                                                                  "2011-10-28" ,
-                                                                  "2011-11-02" ;
-                              rdfs:label "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
-                              owl:versionInfo """
+<http://ns.softwiki.de/req/2/> rdf:type owl:Ontology ;
+                                <http://purl.org/dc/elements/1.1/title> "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
+                                <http://purl.org/dc/terms/contributor> "Jens Lehmann" ,
+                                                                       "Kim Lauenroth" ,
+                                                                       "Philipp Heim" ,
+                                                                       "Sebastian Tramp" ,
+                                                                       "Steffen Lohmann" ,
+                                                                       "Thomas Riechert" ;
+                                <http://purl.org/dc/terms/licence> "http://creativecommons.org/licenses/by/3.0/" ;
+                                <http://purl.org/dc/terms/modified> "2007-03-12" ,
+                                                                    "2007-03-13" ,
+                                                                    "2007-10-24" ,
+                                                                    "2008-01-22" ,
+                                                                    "2008-02-29" ,
+                                                                    "2008-07-08" ,
+                                                                    "2009-01-15" ,
+                                                                    "2009-03-04" ,
+                                                                    "2009-07-09" ,
+                                                                    "2010-01-09" ,
+                                                                    "2010-06-28" ,
+                                                                    "2011-10-28" ,
+                                                                    "2011-11-02" ;
+                                rdfs:label "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
+                                owl:versionInfo """
 	version 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:
 	  - subclasses of ReferencePoint removed
 	  - alignment to DOAP vocabulary
@@ -62,7 +62,7 @@
       version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen
       version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen
       version 0.1 - simple initial version by Thomas and Jens before meeting in Essen""" ;
-                              <http://xmlns.com/foaf/0.1/depiction> "http://ns.softwiki.de/req/img/sworeV2.png" .
+                                <http://xmlns.com/foaf/0.1/depiction> "http://ns.softwiki.de/req/2/img/sworeV2.png" .
 
 #################################################################
 #    Annotation properties
@@ -84,7 +84,7 @@
 #    Object Properties
 #################################################################
 
-###  http://ns.softwiki.de/req/conflicts
+###  http://ns.softwiki.de/req/2/conflicts
 :conflicts rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :relation ;
            rdf:type owl:SymmetricProperty ;
@@ -92,14 +92,14 @@
                       "steht im Konflikt zu"@de .
 
 
-###  http://ns.softwiki.de/req/contains
+###  http://ns.softwiki.de/req/2/contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :relation ;
           rdfs:label "beinhaltet"@de ,
                      "contains"@en .
 
 
-###  http://ns.softwiki.de/req/contributor
+###  http://ns.softwiki.de/req/2/contributor
 :contributor rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
              rdfs:domain :Requirement ;
@@ -108,7 +108,7 @@
                         "trägt bei"@de .
 
 
-###  http://ns.softwiki.de/req/creator
+###  http://ns.softwiki.de/req/2/creator
 :creator rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :contributor ;
          rdfs:comment "Indicates the req:Stakeholder that creates the resource of a req:Requirements." ;
@@ -116,14 +116,14 @@
                     "hat erstellt"@de .
 
 
-###  http://ns.softwiki.de/req/dependsOn
+###  http://ns.softwiki.de/req/2/dependsOn
 :dependsOn rdf:type owl:ObjectProperty ;
            owl:inverseOf :entails ;
            rdfs:label "depends on"@en ,
                       "hängt ab von"@de .
 
 
-###  http://ns.softwiki.de/req/details
+###  http://ns.softwiki.de/req/2/details
 :details rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :relation ;
          owl:inverseOf :isDetailedBy ;
@@ -131,7 +131,7 @@
                     "details"@en .
 
 
-###  http://ns.softwiki.de/req/enrichedBy
+###  http://ns.softwiki.de/req/2/enrichedBy
 :enrichedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://purl.org/muto/core#taggedWith> ,
                                <http://rdfs.org/sioc/ns#about> ;
@@ -141,14 +141,14 @@
                        "enriched by"@en .
 
 
-###  http://ns.softwiki.de/req/entails
+###  http://ns.softwiki.de/req/2/entails
 :entails rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :relation ;
          rdfs:label "entails"@en ,
                     "hat zur Folge"@de .
 
 
-###  http://ns.softwiki.de/req/hasProject
+###  http://ns.softwiki.de/req/2/hasProject
 :hasProject rdf:type owl:ObjectProperty ;
             rdfs:domain :Requirement ;
             rdfs:range :Project ;
@@ -159,7 +159,7 @@
  ] .
 
 
-###  http://ns.softwiki.de/req/invalidates
+###  http://ns.softwiki.de/req/2/invalidates
 :invalidates rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :relation ;
              owl:inverseOf :isInvalidFor ;
@@ -167,7 +167,7 @@
                         "invalidates"@en .
 
 
-###  http://ns.softwiki.de/req/isDetailedBy
+###  http://ns.softwiki.de/req/2/isDetailedBy
 :isDetailedBy rdf:type owl:ObjectProperty ;
               rdfs:domain :Requirement ;
               rdfs:range :Requirement ;
@@ -175,14 +175,14 @@
                          "detailliert durch"@de .
 
 
-###  http://ns.softwiki.de/req/isInvalidFor
+###  http://ns.softwiki.de/req/2/isInvalidFor
 :isInvalidFor rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :relation ;
               rdfs:label "invalid for"@en ,
                          "ungültig für"@de .
 
 
-###  http://ns.softwiki.de/req/isPartOf
+###  http://ns.softwiki.de/req/2/isPartOf
 :isPartOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :relation ;
           owl:inverseOf :contains ;
@@ -190,7 +190,7 @@
                      "ist Teil von"@de .
 
 
-###  http://ns.softwiki.de/req/isRedundantTo
+###  http://ns.softwiki.de/req/2/isRedundantTo
 :isRedundantTo rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :relation ;
                rdf:type owl:SymmetricProperty ;
@@ -198,7 +198,7 @@
                           "redundant zu"@de .
 
 
-###  http://ns.softwiki.de/req/isRequiredBy
+###  http://ns.softwiki.de/req/2/isRequiredBy
 :isRequiredBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :relation ;
               owl:inverseOf :requires ;
@@ -206,7 +206,7 @@
                          "requires"@en .
 
 
-###  http://ns.softwiki.de/req/isSimilarTo
+###  http://ns.softwiki.de/req/2/isSimilarTo
 :isSimilarTo rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :relation ;
              rdf:type owl:SymmetricProperty ;
@@ -214,7 +214,7 @@
                         "ähnlich wie"@de .
 
 
-###  http://ns.softwiki.de/req/lastContributor
+###  http://ns.softwiki.de/req/2/lastContributor
 :lastContributor rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :contributor ;
                  rdfs:comment "Indicates the req:Stakeholder that made the latest contribution on a req:Requirements." ;
@@ -222,7 +222,7 @@
                             "hat zuletzt beigetragen"@de .
 
 
-###  http://ns.softwiki.de/req/lastModifiedBy
+###  http://ns.softwiki.de/req/2/lastModifiedBy
 :lastModifiedBy rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :lastContributor ;
                 rdfs:label "Letzter Autor"@de ,
@@ -230,7 +230,7 @@
                 owl:versionInfo "Deprecated - use lastContributor instead." .
 
 
-###  http://ns.softwiki.de/req/references
+###  http://ns.softwiki.de/req/2/references
 :references rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://purl.org/dc/terms/references> ,
                                <http://purl.org/dc/terms/subject> ,
@@ -242,7 +242,7 @@
                        "referenziert"@de .
 
 
-###  http://ns.softwiki.de/req/relation
+###  http://ns.softwiki.de/req/2/relation
 :relation rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/dc/terms/relation> ;
           rdfs:domain :Requirement ;
@@ -251,14 +251,14 @@
                      "steht in Beziehung zu"@de .
 
 
-###  http://ns.softwiki.de/req/requires
+###  http://ns.softwiki.de/req/2/requires
 :requires rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :relation ;
           rdfs:label "benötigt"@de ,
                      "requires"@en .
 
 
-###  http://ns.softwiki.de/req/source
+###  http://ns.softwiki.de/req/2/source
 :source rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf <http://purl.org/dc/terms/source> ;
         rdfs:domain :Requirement ;
@@ -325,7 +325,7 @@
 #    Data properties
 #################################################################
 
-###  http://ns.softwiki.de/req/priority
+###  http://ns.softwiki.de/req/2/priority
 :priority rdf:type owl:DatatypeProperty ;
           rdfs:domain :Requirement ;
           rdfs:comment "Describes the priority of a req:Requirement." ;
@@ -333,7 +333,7 @@
                      "priority"@en .
 
 
-###  http://ns.softwiki.de/req/quality
+###  http://ns.softwiki.de/req/2/quality
 :quality rdf:type owl:DatatypeProperty ;
          rdfs:domain :Requirement ;
          rdfs:comment "Describes the quality of a req:Requirement." ;
@@ -341,7 +341,7 @@
                     "quality"@en .
 
 
-###  http://ns.softwiki.de/req/status
+###  http://ns.softwiki.de/req/2/status
 :status rdf:type owl:DatatypeProperty ;
         rdfs:domain :Requirement ;
         rdfs:comment "Defines the state of a req:Requirement." ;
@@ -361,7 +361,7 @@
 #    Classes
 #################################################################
 
-###  http://ns.softwiki.de/req/Document
+###  http://ns.softwiki.de/req/2/Document
 :Document rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error4>
                                                      <http://xmlns.com/foaf/0.1/Document>
@@ -374,7 +374,7 @@
                      "Dokument"@de .
 
 
-###  http://ns.softwiki.de/req/Enrichment
+###  http://ns.softwiki.de/req/2/Enrichment
 :Enrichment rdf:type owl:Class ;
             owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error1>
                                                        <http://rdfs.org/sioc/ns#Item>
@@ -391,7 +391,7 @@
                        "Enrichment"@en .
 
 
-###  http://ns.softwiki.de/req/ExistingSystem
+###  http://ns.softwiki.de/req/2/ExistingSystem
 :ExistingSystem rdf:type owl:Class ;
                 rdfs:subClassOf :Source ;
                 rdfs:comment "This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application." ;
@@ -399,7 +399,7 @@
                            "Existing System"@en .
 
 
-###  http://ns.softwiki.de/req/GlossaryTerm
+###  http://ns.softwiki.de/req/2/GlossaryTerm
 :GlossaryTerm rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error3>
                                                          <http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag>
@@ -412,7 +412,7 @@
                          "Glossary Term"@en .
 
 
-###  http://ns.softwiki.de/req/PriorityRating
+###  http://ns.softwiki.de/req/2/PriorityRating
 :PriorityRating rdf:type owl:Class ;
                 rdfs:subClassOf <http://rdfs.org/sioc/types#Poll> ;
                 rdfs:comment "Stakeholder can define one rating about the priority for each requirement." ;
@@ -420,7 +420,7 @@
                            "Priority Rating"@en .
 
 
-###  http://ns.softwiki.de/req/Project
+###  http://ns.softwiki.de/req/2/Project
 :Project rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error9>
                                                     <http://usefulinc.com/ns/doap#Project>
@@ -432,7 +432,7 @@
                     "Projekt"@de .
 
 
-###  http://ns.softwiki.de/req/QualityRating
+###  http://ns.softwiki.de/req/2/QualityRating
 :QualityRating rdf:type owl:Class ;
                rdfs:subClassOf <http://rdfs.org/sioc/types#Poll> ;
                rdfs:comment "Stakeholder can define one rating about the quality for each requirement." ;
@@ -440,14 +440,14 @@
                           "Qualitätsbewertung"@de .
 
 
-###  http://ns.softwiki.de/req/ReferencePoint
+###  http://ns.softwiki.de/req/2/ReferencePoint
 :ReferencePoint rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error7>
+                owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error5>
                                                            <http://www.w3.org/2004/02/skos/core#Concept>
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ,
-                                    [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error8>
+                                    [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error6>
                                                            <http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag>
                                                          ) ;
                                       rdf:type owl:Class
@@ -457,28 +457,28 @@
                            "Referenzpunkt"@de .
 
 
-###  http://ns.softwiki.de/req/Requirement
+###  http://ns.softwiki.de/req/2/Requirement
 :Requirement rdf:type owl:Class ;
              rdfs:comment "The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm)." ;
              rdfs:label "Anforderung"@de ,
                         "Requirement"@en .
 
 
-###  http://ns.softwiki.de/req/Source
+###  http://ns.softwiki.de/req/2/Source
 :Source rdf:type owl:Class ;
         rdfs:comment "The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document." ;
         rdfs:label "Anforderungsquelle"@de ,
                    "Source of the Requirement"@en .
 
 
-###  http://ns.softwiki.de/req/Stakeholder
+###  http://ns.softwiki.de/req/2/Stakeholder
 :Stakeholder rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error5>
+             owl:equivalentClass [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error7>
                                                         <http://xmlns.com/foaf/0.1/Agent>
                                                       ) ;
                                    rdf:type owl:Class
                                  ] ,
-                                 [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error6>
+                                 [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error8>
                                                         <http://xmlns.com/foaf/0.1/Agent>
                                                       ) ;
                                    rdf:type owl:Class
@@ -489,7 +489,7 @@
                         "Stakeholder"@en .
 
 
-###  http://ns.softwiki.de/req/Vote
+###  http://ns.softwiki.de/req/2/Vote
 :Vote rdf:type owl:Class ;
       rdfs:subClassOf <http://rdfs.org/sioc/types#Poll> ;
       rdfs:comment "Rule: Every Author only votes at most one requirement." ;
