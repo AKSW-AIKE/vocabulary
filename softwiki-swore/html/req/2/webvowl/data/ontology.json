@@ -7,7 +7,7 @@
       "undefined" : "Semantic Web Ontology for Requirements Engineering (SWORE)"
     },
     "iri" : "http://ns.softwiki.de/req/2/",
-    "version" : "\n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
+    "version" : "\n        version 2.01 - Customizations for documentation \n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
     "labels" : {
       "undefined" : "Semantic Web Ontology for Requirements Engineering (SWORE)"
     },
@@ -26,6 +26,16 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
+        "value" : "Sebastian Tramp",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Steffen Lohmann",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
         "value" : "Philipp Heim",
         "type" : "label"
       }, {
@@ -36,30 +46,10 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Sebastian Tramp",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Kim Lauenroth",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Steffen Lohmann",
         "type" : "label"
       } ],
       "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2011-10-28",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2007-10-24",
-        "type" : "label"
-      }, {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2008-01-22",
@@ -67,17 +57,12 @@
       }, {
         "identifier" : "modified",
         "language" : "undefined",
+        "value" : "2018-10-28",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
         "value" : "2011-11-02",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2010-01-09",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2007-03-12",
         "type" : "label"
       }, {
         "identifier" : "modified",
@@ -92,16 +77,6 @@
       }, {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2010-06-28",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2009-01-15",
-        "type" : "label"
-      }, {
-        "identifier" : "modified",
-        "language" : "undefined",
         "value" : "2007-03-13",
         "type" : "label"
       }, {
@@ -112,13 +87,43 @@
       }, {
         "identifier" : "modified",
         "language" : "undefined",
+        "value" : "2011-10-28",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2007-10-24",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2010-01-09",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2007-03-12",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2010-06-28",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2009-01-15",
+        "type" : "label"
+      }, {
+        "identifier" : "modified",
+        "language" : "undefined",
         "value" : "2009-07-09",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "\n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
+        "value" : "\n        version 2.01 - Customizations for documentation \n\tversion 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:\n\t  - subclasses of ReferencePoint removed\n\t  - alignment to DOAP vocabulary\n\t  - cardinalities on requirements class edited\n\t  - CC license added\n\t  - descriptions revised and edited\n\tversion 1.9 - 2011-10-28 - Steffen Lohmann - changeLog:\n      - MUTO instead of TAGS as tagging ontology\n      - consistent German and Englisch labels\n      - additional requirements relations\n\t  - imports removed\n      - further alignments:\n\t\t  - req:Document to foaf:Document\n\t\t  - sioc:User (deprecated) to sioc:UserAccount\n\t\t  - DC to DCTERMS\n\t\t  - used additional DCTERMS properties (dcterms:created, dcterms:modified, dcterms:references)\n\t\t  - added global requirement properties (re:status, req:priority, req:quality)\n\t\t  - equivalentClass instead of subproperty alignments (to avoid \"ontology hijacking\")\n\t\t  - skos:Concept no longer subclass of req:referencePoint\n      version 1.05 - for requirements management we added a general class ApplicationDecision \n      version 1.04 - as a result of practical experiences the Abstract classes like AbstractRequirement, AbstractReferencePoint,  AbstractSource  are not necessary anymore; we renamed them \n      version 1.03 - alignement to tag und dc improved; \n      version 1.01 - Alignment to SIOC, FOAF and SKOS added\n      version 1.00 - Thomas Riechert, Steffen Lohmann, Kim Lauenroth, Philipp Heim - starting the next generation of SWORE on 8th of July 2008 in Duisburg\n      version 0.8 - Sebastian Dietzold - skos, tags and dc alignment (title now functional)\n      version 0.7 - Sebastian Dietzold - labels completed and namespace correction\n      version 0.6 - name space changed to ns.softwiki.de/req\n      version 0.5 - refined by Thomas according to ESWC Poster submission \n      version 0.4 - refined by Jens on the way home from Essen\n      version 0.3 - refined by Jens during discussion with Kim and Steffen on 13 March 2007 in Essen\n      version 0.2 - refined by Thomas and Jens in the evening of 12 March 2007 in Essen\n      version 0.1 - simple initial version by Thomas and Jens before meeting in Essen",
         "type" : "label"
       } ],
       "title" : [ {

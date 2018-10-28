@@ -37,3 +37,30 @@ echo "elseif (in_array('application/rdf+xml', \$accept)) header('Location: ontol
 echo "else header('Location: index-en.html');" >> ../html/$ONTONAME/$ONTOVERSION/index.php
 echo "?>" >> ../html/$ONTONAME/$ONTOVERSION/index.php
 
+# Adjust more content in index-de.html
+
+INDEX="../html/$ONTONAME/$ONTOVERSION/index-en.html"
+cp $INDEX output.html
+
+sed 's$version\ 2$<br/>version\ 2$' output.html > output1.html
+mv output1.html output.html
+sed 's$version\ 1$<br/>version\ 1$' output.html > output1.html
+mv output1.html output.html
+sed 's$version\ 0$<br/>version\ 0$' output.html > output1.html
+mv output1.html output.html
+sed 's$insertlicenseURIhere.org$creativecommons.org\/licenses\/by\/3.0$' output.html > output1.html
+mv output1.html output.html
+sed 's$license%20name%20goes%20here$CC%20BY%203.0$' output.html > output1.html
+mv output1.html output.html
+sed 's$license%20name%20goes%20here$CC%20BY%203.0$' output.html > output1.html
+mv output1.html output.html
+sed 's$http://insertlicenseURIhere.org$CC%20BY%203.0$' output.html > output1.html
+mv output1.html output.html
+
+mv output.html $INDEX 
+
+# Copy aditional content
+
+cp ../model/$ONTONAME-$ONTOVERSION/references.html ../html/$ONTONAME/$ONTOVERSION/sections/references-en.html
+cp ../model/$ONTONAME-$ONTOVERSION/references.html ../html/$ONTONAME/$ONTOVERSION/sections/references-de.html
+

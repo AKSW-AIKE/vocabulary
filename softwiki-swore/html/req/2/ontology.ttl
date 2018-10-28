@@ -27,9 +27,11 @@
                                                                     "2010-01-09" ,
                                                                     "2010-06-28" ,
                                                                     "2011-10-28" ,
-                                                                    "2011-11-02" ;
+                                                                    "2011-11-02" ,
+                                                                    "2018-10-28" ;
                                 rdfs:label "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
                                 owl:versionInfo """
+        version 2.01 - Customizations for documentation 
 	version 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:
 	  - subclasses of ReferencePoint removed
 	  - alignment to DOAP vocabulary

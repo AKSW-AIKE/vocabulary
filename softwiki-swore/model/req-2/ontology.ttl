@@ -15,11 +15,12 @@
 <http://ns.softwiki.de/req/2/>
     dcterms:contributor "Jens Lehmann", "Kim Lauenroth", "Philipp Heim", "Sebastian Tramp", "Steffen Lohmann", "Thomas Riechert" ;
     dcterms:licence "http://creativecommons.org/licenses/by/3.0/" ;
-    dcterms:modified "2007-03-12", "2007-03-13", "2007-10-24", "2008-01-22", "2008-02-29", "2008-07-08", "2009-01-15", "2009-03-04", "2009-07-09", "2010-01-09", "2010-06-28", "2011-10-28", "2011-11-02" ;
+    dcterms:modified "2007-03-12", "2007-03-13", "2007-10-24", "2008-01-22", "2008-02-29", "2008-07-08", "2009-01-15", "2009-03-04", "2009-07-09", "2010-01-09", "2010-06-28", "2011-10-28", "2011-11-02", "2018-10-28"  ; 
     a owl:Ontology ;
     rdfs:label "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
     dc:title "Semantic Web Ontology for Requirements Engineering (SWORE)" ;
     owl:versionInfo """
+        version 2.01 - Customizations for documentation 
 	version 2.0 (the generic one) - 2011-11-02 - Thomas and Steffen:
 	  - subclasses of ReferencePoint removed
 	  - alignment to DOAP vocabulary
