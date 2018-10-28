@@ -64,7 +64,7 @@ mv output.html $INDEX
 cp ../model/$ONTONAME-$ONTOVERSION/references.html ../html/$ONTONAME/$ONTOVERSION/sections/references-en.html
 cp ../model/$ONTONAME-$ONTOVERSION/references.html ../html/$ONTONAME/$ONTOVERSION/sections/references-de.html
 
-cp ../model/$ONTONAME-$ONTOVERSION/abstract-en.html ../html/$ONTONAME/$ONTOVERSION/sections/abstract-e.nhtml
+cp ../model/$ONTONAME-$ONTOVERSION/abstract-en.html ../html/$ONTONAME/$ONTOVERSION/sections/abstract-en.nhtml
 cp ../model/$ONTONAME-$ONTOVERSION/abstract-de.html ../html/$ONTONAME/$ONTOVERSION/sections/abstract-de.html
 
 
