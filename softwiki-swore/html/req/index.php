@@ -1,2 +1,2 @@
 <?php header('HTTP/1.1 303 See Other');
-header('Location: index-en.html'); ?>
+header('Location: 2/index-en.html'); ?>

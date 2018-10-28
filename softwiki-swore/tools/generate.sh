@@ -23,8 +23,8 @@ sleep 5
 #start post processing
 
 # Content Negoiation /$ONTONAME
-echo "<?php header('HTTP/1.1 303 See Other');"  	> ../html/$ONTONAME/$ONTOVERSION/index.php
-echo "header('Location: index-en.html'); ?>" >> ../html/$ONTONAME/$ONTOVERSION/index.php
+echo "<?php header('HTTP/1.1 303 See Other');"  	> ../html/$ONTONAME/index.php
+echo "header('Location: $ONTOVERSION/index-en.html'); ?>" >> ../html/$ONTONAME/index.php
 
 
 # Content Negoiation for rdf formats
